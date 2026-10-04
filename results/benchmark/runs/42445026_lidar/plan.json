@@ -1,0 +1,502 @@
+{
+ "schema_version": "floorscan-1.0",
+ "capture": {
+  "tier": "lidar",
+  "source": "floorscan-lidar-v1",
+  "device": null,
+  "frames": 217
+ },
+ "units": "m",
+ "rooms": [
+  {
+   "id": "room_1",
+   "name": null,
+   "polygon": [
+    [
+     2.8427,
+     0.0
+    ],
+    [
+     2.8427,
+     2.9293
+    ],
+    [
+     0.0,
+     2.9293
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "walls": [
+    {
+     "id": "room_1.w0",
+     "p0": [
+      0.0,
+      0.0
+     ],
+     "p1": [
+      2.8427,
+      0.0
+     ],
+     "length": {
+      "value": 2.8427,
+      "ci95": [
+       2.821,
+       2.8644
+      ],
+      "sigma": 0.01107
+     },
+     "observed": true
+    },
+    {
+     "id": "room_1.w1",
+     "p0": [
+      2.8427,
+      0.0
+     ],
+     "p1": [
+      2.8427,
+      2.9293
+     ],
+     "length": {
+      "value": 2.9293,
+      "ci95": [
+       2.9064,
+       2.9522
+      ],
+      "sigma": 0.01168
+     },
+     "observed": true
+    },
+    {
+     "id": "room_1.w2",
+     "p0": [
+      2.8427,
+      2.9293
+     ],
+     "p1": [
+      0.0,
+      2.9293
+     ],
+     "length": {
+      "value": 2.8427,
+      "ci95": [
+       2.821,
+       2.8644
+      ],
+      "sigma": 0.01107
+     },
+     "observed": true
+    },
+    {
+     "id": "room_1.w3",
+     "p0": [
+      0.0,
+      2.9293
+     ],
+     "p1": [
+      0.0,
+      0.0
+     ],
+     "length": {
+      "value": 2.9293,
+      "ci95": [
+       2.9064,
+       2.9522
+      ],
+      "sigma": 0.01168
+     },
+     "observed": true
+    }
+   ],
+   "ceiling_height": {
+    "value": 2.3254,
+    "ci95": [
+     2.3059,
+     2.345
+    ],
+    "sigma": 0.00997
+   },
+   "floor_area": {
+    "value": 8.3271,
+    "ci95": [
+     8.2239,
+     8.4302
+    ],
+    "sigma": 0.05261
+   },
+   "openings": [
+    {
+     "id": "room_1.o0",
+     "wall_id": "room_1.w0",
+     "type": "door",
+     "center_offset": {
+      "value": 0.5056,
+      "ci95": [
+       0.4777,
+       0.5335
+      ],
+      "sigma": 0.01422
+     },
+     "width": {
+      "value": 1.0011,
+      "ci95": [
+       0.9798,
+       1.0224
+      ],
+      "sigma": 0.01087
+     },
+     "height": {
+      "value": 1.6859,
+      "ci95": [
+       1.6496,
+       1.7222
+      ],
+      "sigma": 0.01852
+     },
+     "sill": {
+      "value": 0.0,
+      "ci95": [
+       -0.0338,
+       0.0338
+      ],
+      "sigma": 0.01725
+     },
+     "confidence": 1.0,
+     "quality": {
+      "incidence_cos": 0.831,
+      "wall_hits_inside": 0.001
+     },
+     "links_to": null
+    },
+    {
+     "id": "room_1.o1",
+     "wall_id": "room_1.w2",
+     "type": "window",
+     "center_offset": {
+      "value": 1.0693,
+      "ci95": [
+       1.0409,
+       1.0977
+      ],
+      "sigma": 0.0145
+     },
+     "width": {
+      "value": 1.1034,
+      "ci95": [
+       1.0815,
+       1.1253
+      ],
+      "sigma": 0.01117
+     },
+     "height": {
+      "value": 1.2273,
+      "ci95": [
+       1.1921,
+       1.2624
+      ],
+      "sigma": 0.01796
+     },
+     "sill": {
+      "value": 0.7954,
+      "ci95": [
+       0.7609,
+       0.8298
+      ],
+      "sigma": 0.01756
+     },
+     "confidence": 1.0,
+     "quality": {
+      "incidence_cos": 0.816,
+      "wall_hits_inside": 0.008
+     },
+     "links_to": null
+    }
+   ],
+   "surfaces": [
+    {
+     "id": "room_1.floor",
+     "kind": "floor",
+     "area": {
+      "value": 8.3271,
+      "ci95": [
+       8.2239,
+       8.4302
+      ],
+      "sigma": 0.05261
+     }
+    },
+    {
+     "id": "room_1.ceiling",
+     "kind": "ceiling",
+     "area": {
+      "value": 8.3271,
+      "ci95": [
+       8.2239,
+       8.4302
+      ],
+      "sigma": 0.05261
+     }
+    },
+    {
+     "id": "room_1.w0",
+     "kind": "wall",
+     "area": {
+      "value": 6.6105,
+      "ci95": [
+       6.5281,
+       6.6929
+      ],
+      "sigma": 0.04205
+     }
+    },
+    {
+     "id": "room_1.w1",
+     "kind": "wall",
+     "area": {
+      "value": 6.8118,
+      "ci95": [
+       6.7259,
+       6.8978
+      ],
+      "sigma": 0.04385
+     }
+    },
+    {
+     "id": "room_1.w2",
+     "kind": "wall",
+     "area": {
+      "value": 6.6105,
+      "ci95": [
+       6.5281,
+       6.6929
+      ],
+      "sigma": 0.04205
+     }
+    },
+    {
+     "id": "room_1.w3",
+     "kind": "wall",
+     "area": {
+      "value": 6.8118,
+      "ci95": [
+       6.7259,
+       6.8978
+      ],
+      "sigma": 0.04385
+     }
+    }
+   ],
+   "damage": [
+    {
+     "id": "room_1.dmg0",
+     "surface_id": "room_1.floor",
+     "class": "mold",
+     "confidence": 0.642,
+     "extent": {
+      "width": {
+       "value": 0.24,
+       "ci95": [
+        0.189,
+        0.291
+       ],
+       "sigma": 0.02602
+      },
+      "height": {
+       "value": 0.14,
+       "ci95": [
+        0.0903,
+        0.1897
+       ],
+       "sigma": 0.02535
+      },
+      "area": {
+       "value": 0.024,
+       "ci95": [
+        -0.0105,
+        0.0585
+       ],
+       "sigma": 0.01758
+      }
+     },
+     "polygon_uv": [
+      [
+       1.27,
+       1.09
+      ],
+      [
+       1.05,
+       1.15
+      ],
+      [
+       1.05,
+       1.19
+      ],
+      [
+       1.23,
+       1.21
+      ]
+     ],
+     "location": {
+      "plan_xy": [
+       1.15,
+       1.16
+      ],
+      "z": 0.0
+     }
+    }
+   ],
+   "concealed_damage": [
+    {
+     "id": "room_1.cd0",
+     "rule": "R-MOLD-03",
+     "surface_id": "room_1.floor",
+     "description": "Visible mould: growth is likely present in the wall cavity / back of the board beyond the visible spots.",
+     "confidence": 0.65,
+     "triggered_by": [
+      "room_1.dmg0"
+     ],
+     "extent": {
+      "width": {
+       "value": 0.84,
+       "ci95": [
+        0.7578,
+        0.9222
+       ],
+       "sigma": 0.04195
+      },
+      "height": {
+       "value": 0.74,
+       "ci95": [
+        0.6612,
+        0.8188
+       ],
+       "sigma": 0.04022
+      },
+      "area": {
+       "value": 0.6216,
+       "ci95": [
+        0.4901,
+        0.7531
+       ],
+       "sigma": 0.06709
+      }
+     }
+    }
+   ],
+   "scope": [
+    {
+     "id": "room_1.sc0",
+     "surface_id": "room_1.floor",
+     "code": "MOLD-REM",
+     "description": "Mould remediation (HEPA clean / treat)",
+     "unit": "m2",
+     "quantity": {
+      "value": 0.6216,
+      "ci95": [
+       0.5336,
+       0.7096
+      ],
+      "sigma": 0.04491
+     },
+     "basis": "mould room_1.dmg0",
+     "evidence": [
+      "room_1.dmg0"
+     ],
+     "quantity_sf": 6.7
+    },
+    {
+     "id": "room_1.sc1",
+     "surface_id": "room_1.floor",
+     "code": "FLR-RR",
+     "description": "Flooring - remove and replace (affected area)",
+     "unit": "m2",
+     "quantity": {
+      "value": 0.6216,
+      "ci95": [
+       0.482,
+       0.7612
+      ],
+      "sigma": 0.07123
+     },
+     "basis": "concealed-damage flag R-MOLD-03",
+     "evidence": [
+      "room_1.cd0"
+     ],
+     "quantity_sf": 6.7
+    },
+    {
+     "id": "room_1.sc2",
+     "surface_id": "room_1.floor",
+     "code": "DRY-OUT",
+     "description": "Structural drying (equipment, per room-day)",
+     "unit": "room-day",
+     "quantity": {
+      "value": 3.0,
+      "ci95": [
+       3.0,
+       3.0
+      ],
+      "sigma": 0.0
+     },
+     "basis": "3 days default when concealed damage is flagged",
+     "evidence": [
+      "room_1.cd0"
+     ]
+    }
+   ],
+   "notes": []
+  }
+ ],
+ "plan": {
+  "rooms": [
+   {
+    "room_id": "room_1",
+    "rotation_deg": 0.0,
+    "translation": [
+     0.5742,
+     -0.9346
+    ]
+   }
+  ],
+  "adjacency": [],
+  "footprint_area": {
+   "value": 9.0341,
+   "ci95": [
+    8.6374,
+    9.4308
+   ],
+   "sigma": 0.20239
+  },
+  "wall_thickness": 0.12,
+  "overlaps": [],
+  "drift": {
+   "method": "plane-anchored per-room pose refinement + door-anchored room pose graph (loop closure)",
+   "local_planar": true,
+   "door_graph": true,
+   "links": 0,
+   "loops": 0,
+   "door_residual_rms_before": 0.0,
+   "door_residual_rms_after": 0.0,
+   "wall_thickness_source": "default"
+  }
+ },
+ "quality": {
+  "warnings": [
+   "region of 20 frames dropped: no closed room outline after fitting"
+  ],
+  "hazards": []
+ },
+ "timing": {
+  "openings": 1.337,
+  "stitch": 0.0,
+  "levels_yaw": 0.302,
+  "segment": 4.775,
+  "regions": 0.005,
+  "room_fit": 8.317,
+  "damage": 1.56,
+  "total": 19.427
+ }
+}

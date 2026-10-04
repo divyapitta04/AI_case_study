@@ -1,0 +1,58 @@
+{
+ "world": "arkitscenes",
+ "visit": "469782",
+ "laser_stations": [
+  "190649",
+  "190653"
+ ],
+ "wall_thickness": 0.12,
+ "adjacency": [],
+ "rooms": [
+  {
+   "name": "room",
+   "x0": 0.0,
+   "y0": 0.0,
+   "w": 2.9078354886903366,
+   "d": 1.630494317457806,
+   "ceiling_height": 2.5183439441805007,
+   "floor_area": 4.741209240411736,
+   "walls": {
+    "S": 2.9078354886903366,
+    "N": 2.9078354886903366,
+    "E": 1.630494317457806,
+    "W": 1.630494317457806
+   },
+   "openings": [
+    {
+     "id": "room.S.0",
+     "wall": "S",
+     "center": 1.3081,
+     "width": 0.7576,
+     "height": 1.9879,
+     "sill": 0.0,
+     "kind": "door",
+     "link": null
+    }
+   ],
+   "damage": [],
+   "hazards": {
+    "low_light": false,
+    "glossy_floor": false,
+    "mirrors": 0
+   },
+   "ignore_openings": [
+    {
+     "wall": "N",
+     "u0": 0.65,
+     "u1": 2.45,
+     "note": "shower enclosure (glass, recess) and mirror"
+    }
+   ]
+  }
+ ],
+ "method": "dataprep/room_gt.py: laser stations inside the captured room, sharpest-histogram yaw, floor/ceiling = strongest horizontal planes, each main wall = strongest range^2-weighted plane in a manually chosen window (W:-2.01:-1.93,E:0.88:0.96,S:-0.71:-0.63,N:0.91:0.99)",
+ "openings_reliable": true,
+ "note": "North wall steps (face 0.95 covers 68 %, 0.68 covers 32 % -> 0.95); closet front at x 0.69 in front of the east wall (furniture -> wall 0.92).",
+ "openings_method": "dataprep/openings_gt.py: openings marked roughly on laser elevation images by a person, edges snapped to the laser wall (50 % solid-share crossing, 1 cm columns)",
+ "coverage": "captured_room"
+}

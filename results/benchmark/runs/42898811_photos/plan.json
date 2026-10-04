@@ -1,0 +1,392 @@
+{
+ "schema_version": "floorscan-1.0",
+ "capture": {
+  "tier": "photos",
+  "source": "photos/da_v2",
+  "device": "iPhone 15+ (stills)",
+  "photos": 8
+ },
+ "units": "m",
+ "rooms": [
+  {
+   "id": "room",
+   "name": "room",
+   "polygon": [
+    [
+     2.7084,
+     0.0
+    ],
+    [
+     2.7084,
+     3.4
+    ],
+    [
+     0.0,
+     3.4
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "walls": [
+    {
+     "id": "room.w0",
+     "p0": [
+      0.0,
+      0.0
+     ],
+     "p1": [
+      2.7084,
+      0.0
+     ],
+     "length": {
+      "value": 2.7084,
+      "ci95": [
+       1.6114,
+       3.8055
+      ],
+      "sigma": 0.55972
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w1",
+     "p0": [
+      2.7084,
+      0.0
+     ],
+     "p1": [
+      2.7084,
+      3.4
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       1.4168,
+       5.3832
+      ],
+      "sigma": 1.01186
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w2",
+     "p0": [
+      2.7084,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      3.4
+     ],
+     "length": {
+      "value": 2.7084,
+      "ci95": [
+       1.6114,
+       3.8055
+      ],
+      "sigma": 0.55972
+     },
+     "observed": true
+    },
+    {
+     "id": "room.w3",
+     "p0": [
+      0.0,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      0.0
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       1.4168,
+       5.3832
+      ],
+      "sigma": 1.01186
+     },
+     "observed": false
+    }
+   ],
+   "ceiling_height": {
+    "value": 2.3862,
+    "ci95": [
+     1.6377,
+     3.1346
+    ],
+    "sigma": 0.38186
+   },
+   "floor_area": {
+    "value": 9.2087,
+    "ci95": [
+     3.2086,
+     15.2088
+    ],
+    "sigma": 3.06128
+   },
+   "openings": [
+    {
+     "id": "room.o0",
+     "wall_id": "room.w2",
+     "type": "door",
+     "center_offset": {
+      "value": 0.1684,
+      "ci95": [
+       0.0044,
+       0.3325
+      ],
+      "sigma": 0.0837
+     },
+     "width": {
+      "value": 0.36,
+      "ci95": [
+       0.2215,
+       0.4985
+      ],
+      "sigma": 0.07066
+     },
+     "height": {
+      "value": 0.53,
+      "ci95": [
+       0.3433,
+       0.7167
+      ],
+      "sigma": 0.09524
+     },
+     "sill": {
+      "value": 0.0,
+      "ci95": [
+       -0.1201,
+       0.1201
+      ],
+      "sigma": 0.06127
+     },
+     "confidence": 0.665,
+     "quality": {
+      "incidence_cos": 0.799,
+      "wall_hits_inside": 0.0
+     },
+     "links_to": null
+    }
+   ],
+   "surfaces": [
+    {
+     "id": "room.floor",
+     "kind": "floor",
+     "area": {
+      "value": 9.2087,
+      "ci95": [
+       3.2086,
+       15.2088
+      ],
+      "sigma": 3.06128
+     }
+    },
+    {
+     "id": "room.ceiling",
+     "kind": "ceiling",
+     "area": {
+      "value": 9.2087,
+      "ci95": [
+       3.2086,
+       15.2088
+      ],
+      "sigma": 3.06128
+     }
+    },
+    {
+     "id": "room.w0",
+     "kind": "wall",
+     "area": {
+      "value": 6.4628,
+      "ci95": [
+       3.53,
+       9.3957
+      ],
+      "sigma": 1.49636
+     }
+    },
+    {
+     "id": "room.w1",
+     "kind": "wall",
+     "area": {
+      "value": 8.113,
+      "ci95": [
+       3.0948,
+       13.1313
+      ],
+      "sigma": 2.56033
+     }
+    },
+    {
+     "id": "room.w2",
+     "kind": "wall",
+     "area": {
+      "value": 6.4628,
+      "ci95": [
+       3.53,
+       9.3957
+      ],
+      "sigma": 1.49636
+     }
+    },
+    {
+     "id": "room.w3",
+     "kind": "wall",
+     "area": {
+      "value": 8.113,
+      "ci95": [
+       3.0948,
+       13.1313
+      ],
+      "sigma": 2.56033
+     }
+    }
+   ],
+   "damage": [
+    {
+     "id": "room.dmg0",
+     "surface_id": "room.floor",
+     "class": "hole",
+     "confidence": 0.396,
+     "extent": {
+      "width": {
+       "value": 0.24,
+       "ci95": [
+        0.1137,
+        0.3663
+       ],
+       "sigma": 0.06443
+      },
+      "height": {
+       "value": 0.22,
+       "ci95": [
+        0.0968,
+        0.3432
+       ],
+       "sigma": 0.06286
+      },
+      "area": {
+       "value": 0.032,
+       "ci95": [
+        -0.0686,
+        0.1326
+       ],
+       "sigma": 0.05131
+      }
+     },
+     "polygon_uv": [
+      [
+       0.93,
+       2.75
+      ],
+      [
+       0.81,
+       2.75
+      ],
+      [
+       0.71,
+       2.87
+      ],
+      [
+       0.85,
+       2.93
+      ]
+     ],
+     "location": {
+      "plan_xy": [
+       0.825,
+       2.825
+      ],
+      "z": 0.0
+     }
+    }
+   ],
+   "concealed_damage": [],
+   "scope": [
+    {
+     "id": "room.sc0",
+     "surface_id": "room.floor",
+     "code": "HOLE-PATCH",
+     "description": "Patch hole in drywall",
+     "unit": "ea",
+     "quantity": {
+      "value": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ],
+      "sigma": 0.0
+     },
+     "basis": "hole room.dmg0",
+     "evidence": [
+      "room.dmg0"
+     ]
+    }
+   ],
+   "notes": [
+    "E wall has no planar support: placed at the extent of the observed points (+-0.3 m)",
+    "W wall has no planar support: placed at the extent of the observed points (+-0.3 m)",
+    "north/south walls not both observed: room depth is a prior",
+    "door-height prior rejected (implied scale x3.85 is implausible)"
+   ]
+  }
+ ],
+ "plan": {
+  "rooms": [
+   {
+    "room_id": "room",
+    "rotation_deg": 0.0,
+    "translation": [
+     1.3722,
+     1.8794
+    ]
+   }
+  ],
+  "adjacency": [],
+  "footprint_area": {
+   "value": 9.9561,
+   "ci95": [
+    4.3948,
+    15.5174
+   ],
+   "sigma": 2.83739
+  },
+  "wall_thickness": 0.12,
+  "overlaps": [],
+  "drift": {
+   "method": "door-anchored room placement from doorway shots (photo tier has no shared frame)",
+   "local_planar": false,
+   "door_graph": true,
+   "links": 0,
+   "loops": 0,
+   "door_residual_rms_before": 0.0,
+   "door_residual_rms_after": 0.0,
+   "wall_thickness_source": "default"
+  }
+ },
+ "quality": {
+  "warnings": [
+   "room: E wall has no planar support: placed at the extent of the observed points (+-0.3 m)",
+   "room: W wall has no planar support: placed at the extent of the observed points (+-0.3 m)",
+   "room: north/south walls not both observed: room depth is a prior",
+   "room: door-height prior rejected (implied scale x3.85 is implausible)"
+  ],
+  "hazards": [],
+  "scale": {
+   "room": {
+    "source": "depth network",
+    "scale_net_over_final": 1.0
+   }
+  }
+ },
+ "timing": {
+  "rooms": 10.749,
+  "stitch": 0.0,
+  "damage": 0.143,
+  "total": 10.934
+ }
+}

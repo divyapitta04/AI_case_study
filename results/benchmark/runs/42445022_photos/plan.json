@@ -1,0 +1,685 @@
+{
+ "schema_version": "floorscan-1.0",
+ "capture": {
+  "tier": "photos",
+  "source": "photos/da_v2",
+  "device": "iPhone 15+ (stills)",
+  "photos": 8
+ },
+ "units": "m",
+ "rooms": [
+  {
+   "id": "room",
+   "name": "room",
+   "polygon": [
+    [
+     1.6944,
+     0.0
+    ],
+    [
+     1.6944,
+     3.4
+    ],
+    [
+     0.0,
+     3.4
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "walls": [
+    {
+     "id": "room.w0",
+     "p0": [
+      0.0,
+      0.0
+     ],
+     "p1": [
+      1.6944,
+      0.0
+     ],
+     "length": {
+      "value": 1.6944,
+      "ci95": [
+       1.402,
+       1.9868
+      ],
+      "sigma": 0.14917
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w1",
+     "p0": [
+      1.6944,
+      0.0
+     ],
+     "p1": [
+      1.6944,
+      3.4
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       1.5797,
+       5.2203
+      ],
+      "sigma": 0.92874
+     },
+     "observed": true
+    },
+    {
+     "id": "room.w2",
+     "p0": [
+      1.6944,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      3.4
+     ],
+     "length": {
+      "value": 1.6944,
+      "ci95": [
+       1.402,
+       1.9868
+      ],
+      "sigma": 0.14917
+     },
+     "observed": true
+    },
+    {
+     "id": "room.w3",
+     "p0": [
+      0.0,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      0.0
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       1.5797,
+       5.2203
+      ],
+      "sigma": 0.92874
+     },
+     "observed": true
+    }
+   ],
+   "ceiling_height": {
+    "value": 3.1577,
+    "ci95": [
+     2.4863,
+     3.8292
+    ],
+    "sigma": 0.34258
+   },
+   "floor_area": {
+    "value": 5.761,
+    "ci95": [
+     2.6015,
+     8.9205
+    ],
+    "sigma": 1.612
+   },
+   "openings": [
+    {
+     "id": "room.o0",
+     "wall_id": "room.w1",
+     "type": "door",
+     "center_offset": {
+      "value": 2.51,
+      "ci95": [
+       2.0545,
+       2.9655
+      ],
+      "sigma": 0.23239
+     },
+     "width": {
+      "value": 1.08,
+      "ci95": [
+       0.6459,
+       1.5141
+      ],
+      "sigma": 0.2215
+     },
+     "height": {
+      "value": 2.06,
+      "ci95": [
+       1.5587,
+       2.5613
+      ],
+      "sigma": 0.25577
+     },
+     "sill": {
+      "value": 0.0,
+      "ci95": [
+       -0.4107,
+       0.4107
+      ],
+      "sigma": 0.20954
+     },
+     "confidence": 1.0,
+     "quality": {
+      "incidence_cos": 0.298,
+      "wall_hits_inside": 0.014
+     },
+     "links_to": null
+    }
+   ],
+   "surfaces": [
+    {
+     "id": "room.floor",
+     "kind": "floor",
+     "area": {
+      "value": 5.761,
+      "ci95": [
+       2.6015,
+       8.9205
+      ],
+      "sigma": 1.612
+     }
+    },
+    {
+     "id": "room.ceiling",
+     "kind": "ceiling",
+     "area": {
+      "value": 5.761,
+      "ci95": [
+       2.6015,
+       8.9205
+      ],
+      "sigma": 1.612
+     }
+    },
+    {
+     "id": "room.w0",
+     "kind": "wall",
+     "area": {
+      "value": 5.3504,
+      "ci95": [
+       3.9306,
+       6.7702
+      ],
+      "sigma": 0.72439
+     }
+    },
+    {
+     "id": "room.w1",
+     "kind": "wall",
+     "area": {
+      "value": 10.7362,
+      "ci95": [
+       4.5706,
+       16.9018
+      ],
+      "sigma": 3.14573
+     }
+    },
+    {
+     "id": "room.w2",
+     "kind": "wall",
+     "area": {
+      "value": 5.3504,
+      "ci95": [
+       3.9306,
+       6.7702
+      ],
+      "sigma": 0.72439
+     }
+    },
+    {
+     "id": "room.w3",
+     "kind": "wall",
+     "area": {
+      "value": 10.7362,
+      "ci95": [
+       4.5706,
+       16.9018
+      ],
+      "sigma": 3.14573
+     }
+    }
+   ],
+   "damage": [
+    {
+     "id": "room.dmg0",
+     "surface_id": "room.w2",
+     "class": "water_stain",
+     "confidence": 0.609,
+     "extent": {
+      "width": {
+       "value": 0.94,
+       "ci95": [
+        0.7454,
+        1.1346
+       ],
+       "sigma": 0.09926
+      },
+      "height": {
+       "value": 0.28,
+       "ci95": [
+        0.1638,
+        0.3962
+       ],
+       "sigma": 0.0593
+      },
+      "area": {
+       "value": 0.226,
+       "ci95": [
+        0.1009,
+        0.3511
+       ],
+       "sigma": 0.06383
+      }
+     },
+     "polygon_uv": [
+      [
+       1.03,
+       0.39
+      ],
+      [
+       0.97,
+       0.51
+      ],
+      [
+       0.11,
+       0.47
+      ],
+      [
+       0.11,
+       0.27
+      ],
+      [
+       1.03,
+       0.29
+      ]
+     ],
+     "location": {
+      "plan_xy": [
+       1.044,
+       3.4
+      ],
+      "z": 0.386
+     }
+    },
+    {
+     "id": "room.dmg1",
+     "surface_id": "room.w3",
+     "class": "water_stain",
+     "confidence": 0.456,
+     "extent": {
+      "width": {
+       "value": 0.3,
+       "ci95": [
+        0.1823,
+        0.4177
+       ],
+       "sigma": 0.06007
+      },
+      "height": {
+       "value": 0.38,
+       "ci95": [
+        0.2555,
+        0.5045
+       ],
+       "sigma": 0.06353
+      },
+      "area": {
+       "value": 0.0636,
+       "ci95": [
+        -0.0435,
+        0.1707
+       ],
+       "sigma": 0.05465
+      }
+     },
+     "polygon_uv": [
+      [
+       0.75,
+       1.11
+      ],
+      [
+       0.75,
+       0.91
+      ],
+      [
+       0.91,
+       0.93
+      ],
+      [
+       0.95,
+       0.87
+      ],
+      [
+       0.93,
+       0.79
+      ],
+      [
+       0.99,
+       0.77
+      ],
+      [
+       1.01,
+       1.13
+      ],
+      [
+       0.93,
+       1.07
+      ],
+      [
+       0.85,
+       1.13
+      ]
+     ],
+     "location": {
+      "plan_xy": [
+       0.0,
+       2.503
+      ],
+      "z": 0.968
+     }
+    },
+    {
+     "id": "room.dmg2",
+     "surface_id": "room.floor",
+     "class": "hole",
+     "confidence": 0.972,
+     "extent": {
+      "width": {
+       "value": 0.72,
+       "ci95": [
+        0.5563,
+        0.8837
+       ],
+       "sigma": 0.08354
+      },
+      "height": {
+       "value": 0.74,
+       "ci95": [
+        0.5736,
+        0.9064
+       ],
+       "sigma": 0.08491
+      },
+      "area": {
+       "value": 0.1624,
+       "ci95": [
+        0.0307,
+        0.2941
+       ],
+       "sigma": 0.06719
+      }
+     },
+     "polygon_uv": [
+      [
+       1.57,
+       2.67
+      ],
+      [
+       1.51,
+       2.67
+      ],
+      [
+       1.61,
+       3.17
+      ],
+      [
+       1.51,
+       3.25
+      ],
+      [
+       1.15,
+       3.33
+      ],
+      [
+       1.07,
+       3.31
+      ],
+      [
+       0.99,
+       3.39
+      ],
+      [
+       1.69,
+       3.39
+      ],
+      [
+       1.69,
+       2.83
+      ]
+     ],
+     "location": {
+      "plan_xy": [
+       1.421,
+       3.112
+      ],
+      "z": 0.0
+     }
+    }
+   ],
+   "concealed_damage": [
+    {
+     "id": "room.cd0",
+     "rule": "R-WALL-02",
+     "surface_id": "room.w2",
+     "description": "Low wall stain: moisture wicks up the cavity; wet drywall/insulation likely behind the baseboard and above the visible line.",
+     "confidence": 0.7,
+     "triggered_by": [
+      "room.dmg0"
+     ],
+     "extent": {
+      "width": {
+       "value": 1.54,
+       "ci95": [
+        1.2489,
+        1.8311
+       ],
+       "sigma": 0.14854
+      },
+      "height": {
+       "value": 0.81,
+       "ci95": [
+        0.6286,
+        0.9914
+       ],
+       "sigma": 0.09254
+      },
+      "area": {
+       "value": 1.2474,
+       "ci95": [
+        0.9271,
+        1.5677
+       ],
+       "sigma": 0.16342
+      }
+     }
+    }
+   ],
+   "scope": [
+    {
+     "id": "room.sc0",
+     "surface_id": "room.floor",
+     "code": "HOLE-PATCH",
+     "description": "Patch hole in drywall",
+     "unit": "ea",
+     "quantity": {
+      "value": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ],
+      "sigma": 0.0
+     },
+     "basis": "hole room.dmg2",
+     "evidence": [
+      "room.dmg2"
+     ]
+    },
+    {
+     "id": "room.sc1",
+     "surface_id": "room.w2",
+     "code": "DRY-RR",
+     "description": "Drywall - remove and replace",
+     "unit": "m2",
+     "quantity": {
+      "value": 1.2474,
+      "ci95": [
+       0.8484,
+       1.6464
+      ],
+      "sigma": 0.20359
+     },
+     "basis": "concealed-damage flag R-WALL-02",
+     "evidence": [
+      "room.cd0"
+     ],
+     "quantity_sf": 13.4
+    },
+    {
+     "id": "room.sc2",
+     "surface_id": "room.w2",
+     "code": "INS-RR",
+     "description": "Insulation - remove and replace",
+     "unit": "m2",
+     "quantity": {
+      "value": 1.2474,
+      "ci95": [
+       0.8484,
+       1.6464
+      ],
+      "sigma": 0.20359
+     },
+     "basis": "concealed-damage flag R-WALL-02",
+     "evidence": [
+      "room.cd0"
+     ],
+     "quantity_sf": 13.4
+    },
+    {
+     "id": "room.sc3",
+     "surface_id": "room.w2",
+     "code": "BB-RR",
+     "description": "Baseboard - remove and replace",
+     "unit": "m",
+     "quantity": {
+      "value": 1.54,
+      "ci95": [
+       1.2181,
+       1.8619
+      ],
+      "sigma": 0.16422
+     },
+     "basis": "concealed-damage flag R-WALL-02",
+     "evidence": [
+      "room.cd0"
+     ]
+    },
+    {
+     "id": "room.sc4",
+     "surface_id": "room.w2",
+     "code": "PNT-WALL",
+     "description": "Paint wall surface (full wall for colour continuity)",
+     "unit": "m2",
+     "quantity": {
+      "value": 5.3504,
+      "ci95": [
+       3.6501,
+       7.0507
+      ],
+      "sigma": 0.86747
+     },
+     "basis": "repaint whole surface after repair",
+     "evidence": [
+      "room.cd0"
+     ],
+     "quantity_sf": 57.6
+    },
+    {
+     "id": "room.sc5",
+     "surface_id": "room.floor",
+     "code": "DRY-OUT",
+     "description": "Structural drying (equipment, per room-day)",
+     "unit": "room-day",
+     "quantity": {
+      "value": 3.0,
+      "ci95": [
+       3.0,
+       3.0
+      ],
+      "sigma": 0.0
+     },
+     "basis": "3 days default when concealed damage is flagged",
+     "evidence": [
+      "room.cd0"
+     ]
+    }
+   ],
+   "notes": [
+    "narrow room (corridor): end walls taken as the outermost well-supported planes",
+    "north/south walls not both observed: room depth is a prior",
+    "rejected suspect_mirror_or_glass candidate on wall 3 (0.68x1.13 m)",
+    "scale from door-height prior (x1.023)"
+   ]
+  }
+ ],
+ "plan": {
+  "rooms": [
+   {
+    "room_id": "room",
+    "rotation_deg": 0.0,
+    "translation": [
+     1.2312,
+     1.3315
+    ]
+   }
+  ],
+  "adjacency": [],
+  "footprint_area": {
+   "value": 6.3867,
+   "ci95": [
+    3.249,
+    9.5245
+   ],
+   "sigma": 1.60089
+  },
+  "wall_thickness": 0.12,
+  "overlaps": [],
+  "drift": {
+   "method": "door-anchored room placement from doorway shots (photo tier has no shared frame)",
+   "local_planar": false,
+   "door_graph": true,
+   "links": 0,
+   "loops": 0,
+   "door_residual_rms_before": 0.0,
+   "door_residual_rms_after": 0.0,
+   "wall_thickness_source": "default"
+  }
+ },
+ "quality": {
+  "warnings": [
+   "room: narrow room (corridor): end walls taken as the outermost well-supported planes",
+   "room: north/south walls not both observed: room depth is a prior",
+   "room: rejected suspect_mirror_or_glass candidate on wall 3 (0.68x1.13 m)",
+   "room: scale from door-height prior (x1.023)"
+  ],
+  "hazards": [],
+  "scale": {
+   "room": {
+    "source": "depth network + door height",
+    "scale_net_over_final": 0.9778
+   }
+  }
+ },
+ "timing": {
+  "rooms": 10.681,
+  "stitch": 0.0,
+  "damage": 0.327,
+  "total": 11.048
+ }
+}

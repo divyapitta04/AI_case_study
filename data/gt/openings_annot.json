@@ -1,0 +1,272 @@
+{
+ "421337": {
+  "openings": [
+   {
+    "wall": "W",
+    "u0": 0.0,
+    "u1": 0.99,
+    "sill": 0.0,
+    "top": 1.95,
+    "kind": "door",
+    "note": "doorway at the SW corner: the left edge is the S wall face (corner, u = 0); an open door leaf stands at u 0.06-0.09",
+    "fixed": [
+     "u0"
+    ]
+   }
+  ],
+  "ignore": [
+   {
+    "wall": "E",
+    "u0": 0.5,
+    "u1": 4.05,
+    "note": "bay-window recess"
+   },
+   {
+    "wall": "N",
+    "u0": 0.0,
+    "u1": 0.72,
+    "note": "alcove left of the chimney breast"
+   },
+   {
+    "wall": "N",
+    "u0": 2.42,
+    "u1": 3.71,
+    "note": "alcove right of the chimney breast"
+   }
+  ]
+ },
+ "467293": {
+  "openings": [
+   {
+    "wall": "W",
+    "u0": 0.78,
+    "u1": 2.52,
+    "sill": 0.82,
+    "top": 2.06,
+    "kind": "window"
+   },
+   {
+    "wall": "N",
+    "u0": 1.47,
+    "u1": 2.34,
+    "sill": 0.0,
+    "top": 2.05,
+    "kind": "door"
+   }
+  ],
+  "ignore": [
+   {
+    "wall": "S",
+    "u0": 2.9,
+    "u1": 3.5,
+    "note": "possible closed flush door (dark full-height panel), no laser evidence"
+   }
+  ]
+ },
+ "434650": {
+  "openings": [
+   {
+    "wall": "W",
+    "u0": 0.02,
+    "u1": 0.77,
+    "sill": 0.0,
+    "top": 2.0,
+    "kind": "door"
+   }
+  ],
+  "ignore": [
+   {
+    "wall": "E",
+    "u0": 0.85,
+    "u1": 1.7,
+    "note": "closed door flush with the wall (no laser evidence of an opening)"
+   }
+  ]
+ },
+ "421380": {
+  "openings": [
+   {
+    "wall": "S",
+    "u0": 0.45,
+    "u1": 1.58,
+    "sill": 0.8,
+    "top": 2.08,
+    "kind": "window"
+   }
+  ],
+  "ignore": [
+   {
+    "wall": "E",
+    "u0": 1.88,
+    "u1": 3.01,
+    "note": "diagonal corner region"
+   },
+   {
+    "wall": "N",
+    "u0": 1.6,
+    "u1": 2.82,
+    "note": "diagonal corner region"
+   }
+  ]
+ },
+ "483311": {
+  "openings": [
+   {
+    "wall": "E",
+    "u0": 0.37,
+    "u1": 1.08,
+    "sill": 0.0,
+    "top": 2.03,
+    "kind": "door"
+   }
+  ],
+  "ignore": []
+ },
+ "469249": {
+  "openings": [
+   {
+    "wall": "S",
+    "u0": 0.07,
+    "u1": 0.89,
+    "sill": 0.0,
+    "top": 2.05,
+    "kind": "door"
+   },
+   {
+    "wall": "E",
+    "u0": 1.15,
+    "u1": 2.65,
+    "sill": 0.0,
+    "top": 2.55,
+    "kind": "door",
+    "note": "glazed full-height door"
+   }
+  ],
+  "ignore": []
+ },
+ "469782": {
+  "openings": [
+   {
+    "wall": "S",
+    "u0": 0.95,
+    "u1": 1.65,
+    "sill": 0.0,
+    "top": 2.0,
+    "kind": "door"
+   }
+  ],
+  "ignore": [
+   {
+    "wall": "N",
+    "u0": 0.65,
+    "u1": 2.45,
+    "note": "shower enclosure (glass, recess) and mirror"
+   }
+  ]
+ },
+ "422851": {
+  "openings": [
+   {
+    "wall": "E",
+    "u0": 2.05,
+    "u1": 2.75,
+    "sill": 0.0,
+    "top": 2.0,
+    "kind": "door"
+   },
+   {
+    "wall": "W",
+    "u0": 0.0,
+    "u1": 1.5,
+    "sill": 0.9,
+    "top": 2.05,
+    "kind": "window",
+    "fixed": [
+     "u0"
+    ],
+    "note": "opening above the counter at the corner"
+   },
+   {
+    "wall": "W",
+    "u0": 2.62,
+    "u1": 3.52,
+    "sill": 0.9,
+    "top": 2.05,
+    "kind": "window"
+   },
+   {
+    "wall": "S",
+    "u0": 0.0,
+    "u1": 1.5,
+    "sill": 0.9,
+    "top": 1.38,
+    "kind": "window",
+    "fixed": [
+     "u0"
+    ],
+    "note": "opening above the counter at the corner"
+   }
+  ],
+  "ignore": [
+   {
+    "wall": "N",
+    "u0": 0.55,
+    "u1": 1.6,
+    "note": "window with dark glass flush with the plane (no laser evidence)"
+   }
+  ]
+ },
+ "471952": {
+  "openings": [
+   {
+    "wall": "S",
+    "u0": 0.27,
+    "u1": 1.12,
+    "sill": 0.0,
+    "top": 2.0,
+    "kind": "door"
+   },
+   {
+    "wall": "E",
+    "u0": 1.53,
+    "u1": 1.93,
+    "sill": 0.32,
+    "top": 2.05,
+    "kind": "window"
+   },
+   {
+    "wall": "E",
+    "u0": 5.0,
+    "u1": 5.35,
+    "sill": 0.35,
+    "top": 2.05,
+    "kind": "window"
+   },
+   {
+    "wall": "W",
+    "u0": 0.88,
+    "u1": 3.5,
+    "sill": 0.12,
+    "top": 2.05,
+    "kind": "window",
+    "note": "glazed wall with mullions"
+   },
+   {
+    "wall": "W",
+    "u0": 5.38,
+    "u1": 7.1,
+    "sill": 0.32,
+    "top": 2.05,
+    "kind": "window"
+   }
+  ],
+  "ignore": [
+   {
+    "wall": "N",
+    "u0": 0.0,
+    "u1": 3.63,
+    "note": "kitchen units (oven doors, glass fronts)"
+   }
+  ]
+ }
+}

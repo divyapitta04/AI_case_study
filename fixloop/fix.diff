@@ -1,0 +1,82 @@
+diff -ru before_src/floorscan/geometry/room.py after_src/floorscan/geometry/room.py
+--- before_src/floorscan/geometry/room.py	2026-10-03 17:02:02.104021800 +0530
++++ after_src/floorscan/geometry/room.py	2026-10-03 17:21:07.211147200 +0530
+@@ -6,6 +6,7 @@
+ 
+ import cv2
+ import numpy as np
++from scipy import ndimage as ndi
+ 
+ from ..frames import Capture
+ from .primitives import Grid, mode_peak
+@@ -264,10 +265,60 @@
+     return best
+ 
+ 
++def _plane_candidates(u: np.ndarray, lo: float, hi: float, min_frac: float, min_count: int = 8, sep: float = 0.05):
++    """All local maxima of the wall-normal histogram (1 cm bins, same smoothing as mode_peak), >= sep apart."""
++    nb = int(np.ceil((hi - lo) / 0.01))
++    m = (u >= lo) & (u <= hi)
++    if m.sum() < 5:
++        return []
++    h, _ = np.histogram(u[m], bins=nb, range=(lo, lo + nb * 0.01))
++    hs = ndi.uniform_filter1d(h.astype(float), 5, mode="constant")
++    pk = [i for i in range(nb) if hs[i] >= min_frac * hs.max() and hs[i] >= min_count
++          and (i == 0 or hs[i] >= hs[i - 1]) and (i == nb - 1 or hs[i] > hs[i + 1])]
++    keep = []
++    for i in sorted(pk, key=lambda i: -hs[i]):
++        if all(abs(i - j) * 0.01 >= sep for j in keep):
++            keep.append(i)
++    return [lo + (i + 0.5) * 0.01 for i in sorted(keep)]
++
++
++def _length_coverage(along: np.ndarray, s0: float, s1: float, bin_w: float = 0.10) -> float:
++    if s1 - s0 < bin_w:
++        return 0.0
++    h, _ = np.histogram(along, bins=int((s1 - s0) / bin_w), range=(s0, s1))
++    return float(np.mean(h >= 3))
++
++
++def pick_wall_plane(u: np.ndarray, along: np.ndarray, z: Optional[np.ndarray], zc: Optional[float], cu: float, win: float,
++                    min_frac: float, s0: float, s1: float, min_cov: float = 0.6, min_rel: float = 0.25):
++    """Recess-aware plane choice.  The highest histogram peak is not always the wall: the back of a bay window or a chimney
++    alcove can collect more points than the main wall face.  Among candidate planes that reach the ceiling (not furniture /
++    sills), cover >= `min_cov` of the wall length and have >= `min_rel` of the best support, take the innermost (u grows
++    outwards).  Falls back to pick_wall_peak when no candidate qualifies or heights are unknown."""
++    base = pick_wall_peak(u, cu, win, min_frac)
++    if base is None or z is None or zc is None:
++        return base
++    cands = []
++    for c in _plane_candidates(u, cu - win, cu + win, min_frac):
++        inl = np.abs(u - c) < 0.03
++        if inl.sum() < 30:
++            continue
++        cands.append((c, int(inl.sum()), float(np.percentile(z[inl], 97)) >= zc - 0.5, _length_coverage(along[inl], s0, s1)))
++    if not cands:
++        return base
++    top = max(c[1] for c in cands)
++    ok = [c for c in cands if c[2] and c[3] >= min_cov and c[1] >= min_rel * top]
++    if not ok:
++        return base
++    c = min(ok, key=lambda x: x[0])[0]
++    sel = u[np.abs(u - c) < 0.02]
++    return (float(np.median(sel)), int(sel.size)) if sel.size else base
++
++
+ def refine_walls(walls: List[Wall], xy: np.ndarray, frames: np.ndarray, win: float = 0.45,
+                  min_frac: float = 0.12, chunk: int = 6, z: Optional[np.ndarray] = None,
+                  zc: Optional[float] = None) -> List[Wall]:
+-    """Snap each wall to the outermost well-supported plane within `win` of its current position."""
++    """Snap each wall to its plane within `win` of its current position (recess-aware choice, see pick_wall_plane)."""
+     out = []
+     for w in walls:
+         n = np.array(w.out_n)
+@@ -277,7 +328,7 @@
+         m = (xy[:, oth] > w.s0 + 0.12) & (xy[:, oth] < w.s1 - 0.12)
+         u = sgn * xy[m, ax]
+         cu = sgn * w.coord
+-        res = pick_wall_peak(u, cu, win, min_frac)
++        res = pick_wall_plane(u, xy[m, oth], None if z is None else z[m], zc, cu, win, min_frac, w.s0, w.s1)
+         nw = Wall(w.idx, w.orient, w.coord, w.s0, w.s1, w.out_n, w.sigma, w.support, w.observed)
+         if res is not None:
+             nw.coord = float(sgn * res[0])

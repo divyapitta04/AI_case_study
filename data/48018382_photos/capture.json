@@ -1,0 +1,12 @@
+{
+ "format": "floorscan-photos-v1",
+ "tier": "photos",
+ "device": {
+  "model": "iPad Pro (ARKitScenes, real)"
+ },
+ "rooms": [
+  "room"
+ ],
+ "frames_source": "vga_wide",
+ "note": "8 frames picked from a walking capture near one standing spot (approximates the protocol)"
+}

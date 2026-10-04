@@ -1,0 +1,270 @@
+{
+ "schema_version": "floorscan-1.0",
+ "capture": {
+  "tier": "photos",
+  "source": "photos/da_v2",
+  "device": "iPhone 15+ (stills)",
+  "photos": 4
+ },
+ "units": "m",
+ "rooms": [
+  {
+   "id": "room",
+   "name": "room",
+   "polygon": [
+    [
+     3.6116,
+     0.0
+    ],
+    [
+     3.6116,
+     3.4
+    ],
+    [
+     0.0,
+     3.4
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "walls": [
+    {
+     "id": "room.w0",
+     "p0": [
+      0.0,
+      0.0
+     ],
+     "p1": [
+      3.6116,
+      0.0
+     ],
+     "length": {
+      "value": 3.6116,
+      "ci95": [
+       0.1055,
+       7.1177
+      ],
+      "sigma": 1.78882
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w1",
+     "p0": [
+      3.6116,
+      0.0
+     ],
+     "p1": [
+      3.6116,
+      3.4
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       -2.8462,
+       9.6462
+      ],
+      "sigma": 3.18686
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w2",
+     "p0": [
+      3.6116,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      3.4
+     ],
+     "length": {
+      "value": 3.6116,
+      "ci95": [
+       0.1055,
+       7.1177
+      ],
+      "sigma": 1.78882
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w3",
+     "p0": [
+      0.0,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      0.0
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       -2.8462,
+       9.6462
+      ],
+      "sigma": 3.18686
+     },
+     "observed": true
+    }
+   ],
+   "ceiling_height": {
+    "value": 3.2648,
+    "ci95": [
+     2.0734,
+     4.4562
+    ],
+    "sigma": 0.60787
+   },
+   "floor_area": {
+    "value": 12.2793,
+    "ci95": [
+     4.1258,
+     20.4327
+    ],
+    "sigma": 4.15993
+   },
+   "openings": [],
+   "surfaces": [
+    {
+     "id": "room.floor",
+     "kind": "floor",
+     "area": {
+      "value": 12.2793,
+      "ci95": [
+       4.1258,
+       20.4327
+      ],
+      "sigma": 4.15993
+     }
+    },
+    {
+     "id": "room.ceiling",
+     "kind": "ceiling",
+     "area": {
+      "value": 12.2793,
+      "ci95": [
+       4.1258,
+       20.4327
+      ],
+      "sigma": 4.15993
+     }
+    },
+    {
+     "id": "room.w0",
+     "kind": "wall",
+     "area": {
+      "value": 11.791,
+      "ci95": [
+       7.5067,
+       16.0754
+      ],
+      "sigma": 2.1859
+     }
+    },
+    {
+     "id": "room.w1",
+     "kind": "wall",
+     "area": {
+      "value": 11.1003,
+      "ci95": [
+       3.8221,
+       18.3786
+      ],
+      "sigma": 3.71341
+     }
+    },
+    {
+     "id": "room.w2",
+     "kind": "wall",
+     "area": {
+      "value": 11.791,
+      "ci95": [
+       7.5067,
+       16.0754
+      ],
+      "sigma": 2.1859
+     }
+    },
+    {
+     "id": "room.w3",
+     "kind": "wall",
+     "area": {
+      "value": 11.1003,
+      "ci95": [
+       3.8221,
+       18.3786
+      ],
+      "sigma": 3.71341
+     }
+    }
+   ],
+   "damage": [],
+   "concealed_damage": [],
+   "scope": [],
+   "notes": [
+    "E wall has no planar support: placed at the extent of the observed points (+-0.3 m)",
+    "N wall has no planar support: placed at the extent of the observed points (+-0.3 m)",
+    "north/south walls not both observed: room depth is a prior",
+    "low light: damage confidence reduced"
+   ]
+  }
+ ],
+ "plan": {
+  "rooms": [
+   {
+    "room_id": "room",
+    "rotation_deg": 0.0,
+    "translation": [
+     2.4592,
+     -2.5692
+    ]
+   }
+  ],
+  "adjacency": [],
+  "footprint_area": {
+   "value": 13.1351,
+   "ci95": [
+    5.6995,
+    20.5706
+   ],
+   "sigma": 3.79363
+  },
+  "wall_thickness": 0.12,
+  "overlaps": [],
+  "drift": {
+   "method": "door-anchored room placement from doorway shots (photo tier has no shared frame)",
+   "local_planar": false,
+   "door_graph": true,
+   "links": 0,
+   "loops": 0,
+   "door_residual_rms_before": 0.0,
+   "door_residual_rms_after": 0.0,
+   "wall_thickness_source": "default"
+  }
+ },
+ "quality": {
+  "warnings": [
+   "room: E wall has no planar support: placed at the extent of the observed points (+-0.3 m)",
+   "room: N wall has no planar support: placed at the extent of the observed points (+-0.3 m)",
+   "room: north/south walls not both observed: room depth is a prior",
+   "room: low light: damage confidence reduced"
+  ],
+  "hazards": [],
+  "scale": {
+   "room": {
+    "source": "depth network",
+    "scale_net_over_final": 1.0
+   }
+  }
+ },
+ "timing": {
+  "rooms": 30.92,
+  "stitch": 0.0,
+  "damage": 0.472,
+  "total": 31.452
+ }
+}

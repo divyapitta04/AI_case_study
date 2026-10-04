@@ -1,0 +1,3825 @@
+{
+ "scores": {
+  "42897501_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 2,
+    "walls_ok": 0,
+    "walls_max_abs_err": 2.263068981630977,
+    "walls_rel_err_mean": 0.5666641356707438,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.018664864621806387,
+    "openings_gt": 4,
+    "openings_tp": 1,
+    "openings_missed": 3,
+    "openings_phantom": 2,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -56.966020703944956,
+    "iou": 0.7958190589173626,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 1,
+    "walls_missing": 2,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 3.162,
+    "stitch": 0.001,
+    "levels_yaw": 0.623,
+    "segment": 7.827,
+    "regions": 0.005,
+    "room_fit": 9.6,
+    "damage": 13.864,
+    "total": 37.027
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -2.263068981630977,
+     "half": 0.05725000000000002,
+     "inside": false,
+     "val": 3.993668981630977,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -2.263068981630977,
+     "half": 0.05725000000000002,
+     "inside": false,
+     "val": 3.993668981630977,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.018664864621806387,
+     "half": 0.061100000000000154,
+     "inside": true,
+     "val": 2.3586351353781936,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -4.9056670933078745,
+     "half": 0.15605000000000002,
+     "inside": false,
+     "val": 8.611567093307874,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": 0.37070000000000014,
+     "half": 1.1778499999999998,
+     "inside": true,
+     "val": 0.824,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.9240999999999999,
+     "half": 1.1805999999999999,
+     "inside": true,
+     "val": 1.9798,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -4.9056670933078745,
+     "half": 0.15605000000000002,
+     "inside": false,
+     "val": 8.611567093307874,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "42897501_photos": {
+   "gates": {
+    "tier": "photos",
+    "walls_n": 4,
+    "walls_ok": 2,
+    "walls_max_abs_err": 1.2436953255472392,
+    "walls_rel_err_mean": 0.31263280633377316,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.11573513537819347,
+    "openings_gt": 4,
+    "openings_tp": 0,
+    "openings_missed": 4,
+    "openings_phantom": 0,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": 50.03076513263478,
+    "iou": 0.6143498103705897,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 2,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "rooms": 15.64,
+    "stitch": 0.0,
+    "damage": 0.405,
+    "total": 16.091
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.19366898163097712,
+     "half": 8.0622,
+     "inside": true,
+     "val": 3.993668981630977,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": 1.2436953255472383,
+     "half": 7.9513,
+     "inside": true,
+     "val": 2.156304674452761,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": -0.19366898163097712,
+     "half": 8.0622,
+     "inside": true,
+     "val": 3.993668981630977,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": 1.2436953255472392,
+     "half": 7.9513,
+     "inside": true,
+     "val": 2.156304674452761,
+     "tier": "photos"
+    },
+    {
+     "kind": "height",
+     "err": -0.11573513537819347,
+     "half": 0.9529000000000001,
+     "inside": true,
+     "val": 2.3586351353781936,
+     "tier": "photos"
+    },
+    {
+     "kind": "area",
+     "err": 4.308432906692126,
+     "half": 13.029100000000001,
+     "inside": true,
+     "val": 8.611567093307874,
+     "tier": "photos"
+    },
+    {
+     "kind": "footprint",
+     "err": 4.308432906692126,
+     "half": 13.029100000000001,
+     "inside": true,
+     "val": 8.611567093307874,
+     "tier": "photos"
+    }
+   ]
+  },
+  "42897504_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 0,
+    "walls_ok": 0,
+    "walls_max_abs_err": null,
+    "walls_rel_err_mean": null,
+    "ceilings_n": 0,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": null,
+    "openings_gt": 0,
+    "openings_tp": 0,
+    "openings_missed": 0,
+    "openings_phantom": 0,
+    "openings_ok": 0,
+    "openings_rate": null,
+    "openings_pass": null,
+    "footprint_err_pct": -100.0,
+    "iou": 0.4140608451392577,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 1,
+    "rooms_extra": 3,
+    "walls_missing": 4,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 2.573,
+    "stitch": 0.001,
+    "levels_yaw": 0.424,
+    "segment": 7.246,
+    "regions": 0.01,
+    "room_fit": 9.525,
+    "damage": 4.268,
+    "total": 25.19
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "footprint",
+     "err": -8.611567093307874,
+     "half": 0.0,
+     "inside": false,
+     "val": 8.611567093307874,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "42897508_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 1.9941689816309771,
+    "walls_rel_err_mean": 0.40604601058053236,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.026164864621806228,
+    "openings_gt": 4,
+    "openings_tp": 0,
+    "openings_missed": 4,
+    "openings_phantom": 2,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -65.59278969907146,
+    "iou": 0.6847323879741141,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 1,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 1,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 2.042,
+    "stitch": 0.001,
+    "levels_yaw": 0.43,
+    "segment": 7.285,
+    "regions": 0.004,
+    "room_fit": 9.314,
+    "damage": 3.032,
+    "total": 23.486
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -1.994168981630977,
+     "half": 0.07889999999999986,
+     "inside": false,
+     "val": 3.993668981630977,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.6744046744527612,
+     "half": 0.050799999999999956,
+     "inside": false,
+     "val": 2.156304674452761,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -1.9941689816309771,
+     "half": 0.07889999999999986,
+     "inside": false,
+     "val": 3.993668981630977,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.6744046744527612,
+     "half": 0.050799999999999956,
+     "inside": false,
+     "val": 2.156304674452761,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.026164864621806228,
+     "half": 0.06394999999999995,
+     "inside": true,
+     "val": 2.3586351353781936,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -5.648567093307874,
+     "half": 0.1423000000000001,
+     "inside": false,
+     "val": 8.611567093307874,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -5.648567093307874,
+     "half": 0.1423000000000001,
+     "inside": false,
+     "val": 8.611567093307874,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "47204552_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 2,
+    "walls_max_abs_err": 0.1085347491298636,
+    "walls_rel_err_mean": 0.015612974025746143,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.0022104442506476474,
+    "openings_gt": 5,
+    "openings_tp": 5,
+    "openings_missed": 0,
+    "openings_phantom": 1,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -3.1182087653396247,
+    "iou": 0.9688144988624667,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 11,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 12.121,
+    "stitch": 0.0,
+    "levels_yaw": 0.953,
+    "segment": 18.039,
+    "regions": 0.008,
+    "room_fit": 57.338,
+    "damage": 11.804,
+    "total": 104.19
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.010480691278472065,
+     "half": 0.1420499999999998,
+     "inside": true,
+     "val": 7.7404806912784725,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.1085347491298636,
+     "half": 0.0754999999999999,
+     "inside": false,
+     "val": 3.6333347491298635,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.010480691278472065,
+     "half": 0.1420499999999998,
+     "inside": true,
+     "val": 7.7404806912784725,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.1085347491298636,
+     "half": 0.0754999999999999,
+     "inside": false,
+     "val": 3.6333347491298635,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": -0.0022104442506476474,
+     "half": 0.05799999999999983,
+     "inside": true,
+     "val": 2.3669104442506477,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -0.8769574705908205,
+     "half": 0.979099999999999,
+     "inside": true,
+     "val": 28.12375747059082,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.07139999999999996,
+     "half": 0.06475,
+     "inside": false,
+     "val": 0.4139,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.17669999999999986,
+     "half": 0.10910000000000009,
+     "inside": false,
+     "val": 1.8048,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.061299999999999966,
+     "half": 0.07474999999999998,
+     "inside": true,
+     "val": 0.4075,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.1533,
+     "half": 0.11059999999999992,
+     "inside": false,
+     "val": 1.7694,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.1157999999999999,
+     "half": 0.07814999999999994,
+     "inside": false,
+     "val": 1.7864,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.23649999999999993,
+     "half": 0.1089,
+     "inside": false,
+     "val": 1.7809,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.16010000000000035,
+     "half": 0.11030000000000006,
+     "inside": false,
+     "val": 2.6735,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": 0.10240000000000005,
+     "half": 0.11765000000000014,
+     "inside": true,
+     "val": 1.9271,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.09870000000000001,
+     "half": 0.06209999999999999,
+     "inside": false,
+     "val": 0.8747,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.07740000000000014,
+     "half": 0.11115000000000008,
+     "inside": true,
+     "val": 2.0095,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -0.8769574705908205,
+     "half": 0.979099999999999,
+     "inside": true,
+     "val": 28.12375747059082,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "47204552_photos": {
+   "gates": {
+    "tier": "photos",
+    "walls_n": 2,
+    "walls_ok": 0,
+    "walls_max_abs_err": 3.940480691278473,
+    "walls_rel_err_mean": 0.5090744164917793,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.13308955574935233,
+    "openings_gt": 5,
+    "openings_tp": 0,
+    "openings_missed": 5,
+    "openings_phantom": 1,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -54.06019265558481,
+    "iou": 0.45939807344415207,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 2,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 2,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "rooms": 19.402,
+    "stitch": 0.0,
+    "damage": 0.64,
+    "total": 20.088
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -3.940480691278473,
+     "half": 6.0914,
+     "inside": true,
+     "val": 7.7404806912784725,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": -3.9404806912784727,
+     "half": 6.0914,
+     "inside": true,
+     "val": 7.7404806912784725,
+     "tier": "photos"
+    },
+    {
+     "kind": "height",
+     "err": 0.13308955574935233,
+     "half": 1.166,
+     "inside": true,
+     "val": 2.3669104442506477,
+     "tier": "photos"
+    },
+    {
+     "kind": "area",
+     "err": -15.203757470590821,
+     "half": 10.7676,
+     "inside": false,
+     "val": 28.12375747059082,
+     "tier": "photos"
+    },
+    {
+     "kind": "footprint",
+     "err": -15.203757470590821,
+     "half": 10.7676,
+     "inside": false,
+     "val": 28.12375747059082,
+     "tier": "photos"
+    }
+   ]
+  },
+  "47204554_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.06448069127847234,
+    "walls_rel_err_mean": 0.010555261257939964,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.00028955574935229933,
+    "openings_gt": 5,
+    "openings_tp": 5,
+    "openings_missed": 0,
+    "openings_phantom": 1,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -2.1009193782469593,
+    "iou": 0.9077983843391465,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 1,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 13,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 4.567,
+    "stitch": 0.001,
+    "levels_yaw": 0.698,
+    "segment": 11.395,
+    "regions": 0.028,
+    "room_fit": 21.471,
+    "damage": 7.303,
+    "total": 48.043
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.04643474912986356,
+     "half": 0.07589999999999986,
+     "inside": true,
+     "val": 3.6333347491298635,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.06448069127847234,
+     "half": 0.14179999999999993,
+     "inside": true,
+     "val": 7.7404806912784725,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.04643474912986312,
+     "half": 0.07589999999999986,
+     "inside": true,
+     "val": 3.6333347491298635,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.06448069127847145,
+     "half": 0.14179999999999993,
+     "inside": true,
+     "val": 7.7404806912784725,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.00028955574935229933,
+     "half": 0.05774999999999997,
+     "inside": true,
+     "val": 2.3669104442506477,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -0.5908574705908194,
+     "half": 0.9912500000000009,
+     "inside": true,
+     "val": 28.12375747059082,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": 0.09549999999999992,
+     "half": 0.06510000000000005,
+     "inside": false,
+     "val": 0.8747,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.06740000000000013,
+     "half": 0.11144999999999994,
+     "inside": true,
+     "val": 2.0095,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.08150000000000002,
+     "half": 0.0876,
+     "inside": true,
+     "val": 0.4139,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.21530000000000005,
+     "half": 0.11275000000000002,
+     "inside": false,
+     "val": 1.8048,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.07069999999999999,
+     "half": 0.06059999999999999,
+     "inside": false,
+     "val": 0.4075,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.22330000000000005,
+     "half": 0.10785,
+     "inside": false,
+     "val": 1.7694,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.6103000000000001,
+     "half": 0.07445000000000002,
+     "inside": false,
+     "val": 1.7864,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.3564999999999998,
+     "half": 0.10829999999999995,
+     "inside": false,
+     "val": 1.7809,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": 0.4659,
+     "half": 0.1302000000000001,
+     "inside": false,
+     "val": 2.6735,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": 0.3600000000000001,
+     "half": 0.12314999999999987,
+     "inside": false,
+     "val": 1.9271,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -0.5908574705908194,
+     "half": 0.9912500000000009,
+     "inside": true,
+     "val": 28.12375747059082,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "47204556_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.1112806912784734,
+    "walls_rel_err_mean": 0.010069156380294935,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.009789555749352363,
+    "openings_gt": 5,
+    "openings_tp": 5,
+    "openings_missed": 0,
+    "openings_phantom": 2,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -2.0066929932139144,
+    "iou": 0.9799445223071407,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 5,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 3.085,
+    "stitch": 0.0,
+    "levels_yaw": 0.464,
+    "segment": 7.595,
+    "regions": 0.013,
+    "room_fit": 13.253,
+    "damage": 7.055,
+    "total": 32.814
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.020934749129863484,
+     "half": 0.07735000000000003,
+     "inside": true,
+     "val": 3.6333347491298635,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.1112806912784734,
+     "half": 0.1412,
+     "inside": true,
+     "val": 7.7404806912784725,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.020934749129863484,
+     "half": 0.07735000000000003,
+     "inside": true,
+     "val": 3.6333347491298635,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.11128069127847162,
+     "half": 0.1412,
+     "inside": true,
+     "val": 7.7404806912784725,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.009789555749352363,
+     "half": 0.058599999999999985,
+     "inside": true,
+     "val": 2.3669104442506477,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -0.5643574705908208,
+     "half": 0.9978000000000016,
+     "inside": true,
+     "val": 28.12375747059082,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.03720000000000001,
+     "half": 0.06325000000000003,
+     "inside": true,
+     "val": 0.8747,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -1.7262,
+     "half": 0.1017,
+     "inside": false,
+     "val": 2.0095,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.1646,
+     "half": 0.10565,
+     "inside": false,
+     "val": 0.4139,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.22689999999999988,
+     "half": 0.11649999999999994,
+     "inside": false,
+     "val": 1.8048,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.07749999999999996,
+     "half": 0.0595,
+     "inside": false,
+     "val": 0.4075,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.12140000000000017,
+     "half": 0.10849999999999993,
+     "inside": false,
+     "val": 1.7694,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.1400999999999999,
+     "half": 0.09179999999999999,
+     "inside": false,
+     "val": 1.7864,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.2535999999999998,
+     "half": 0.11145000000000005,
+     "inside": false,
+     "val": 1.7809,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.1897000000000002,
+     "half": 0.10254999999999992,
+     "inside": false,
+     "val": 2.6735,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.05930000000000013,
+     "half": 0.11449999999999994,
+     "inside": true,
+     "val": 1.9271,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -0.5643574705908208,
+     "half": 0.9978000000000016,
+     "inside": true,
+     "val": 28.12375747059082,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "47332915_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 2,
+    "walls_max_abs_err": 0.04115249378148578,
+    "walls_rel_err_mean": 0.005731885713456775,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.0021486935995453926,
+    "openings_gt": 2,
+    "openings_tp": 2,
+    "openings_missed": 0,
+    "openings_phantom": 0,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -1.1481003816537623,
+    "iou": 0.9885422508891428,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": true,
+    "damage_tp": 0,
+    "damage_fp": 8,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 3.316,
+    "stitch": 0.0,
+    "levels_yaw": 0.595,
+    "segment": 8.917,
+    "regions": 0.008,
+    "room_fit": 23.379,
+    "damage": 5.403,
+    "total": 43.785
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.0018103652665750758,
+     "half": 0.07089999999999996,
+     "inside": true,
+     "val": 3.2802103652665755,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.04115249378148578,
+     "half": 0.07929999999999993,
+     "inside": true,
+     "val": 3.7713524937814857,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.0018103652665750758,
+     "half": 0.07089999999999996,
+     "inside": true,
+     "val": 3.2802103652665755,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.04115249378148578,
+     "half": 0.07929999999999993,
+     "inside": true,
+     "val": 3.7713524937814857,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.0021486935995453926,
+     "half": 0.06230000000000002,
+     "inside": true,
+     "val": 2.6874513064004546,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -0.14202954117597777,
+     "half": 0.4471499999999997,
+     "inside": true,
+     "val": 12.370829541175977,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.3093,
+     "half": 0.06059999999999999,
+     "inside": false,
+     "val": 0.8528,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.0915999999999999,
+     "half": 0.11154999999999993,
+     "inside": true,
+     "val": 2.0721,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.18330000000000002,
+     "half": 0.20014999999999994,
+     "inside": true,
+     "val": 1.5845,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.1137999999999999,
+     "half": 0.14970000000000017,
+     "inside": true,
+     "val": 2.5429,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -0.14202954117597777,
+     "half": 0.4471499999999997,
+     "inside": true,
+     "val": 12.370829541175977,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "47332915_photos": {
+   "gates": {
+    "tier": "photos",
+    "walls_n": 4,
+    "walls_ok": 4,
+    "walls_max_abs_err": 0.11978963473342441,
+    "walls_rel_err_mean": 0.022057485421717475,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.020751306400454528,
+    "openings_gt": 2,
+    "openings_tp": 0,
+    "openings_missed": 2,
+    "openings_phantom": 1,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": 4.439237134390408,
+    "iou": 0.9574945465306486,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": true,
+    "ceiling_pass": true,
+    "footprint_pass": true,
+    "damage_tp": 0,
+    "damage_fp": 3,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "rooms": 15.519,
+    "stitch": 0.0,
+    "damage": 0.496,
+    "total": 16.065
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": 0.028647506218514085,
+     "half": 6.0941,
+     "inside": true,
+     "val": 3.7713524937814857,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": 0.11978963473342441,
+     "half": 5.9466,
+     "inside": true,
+     "val": 3.2802103652665755,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": 0.028647506218514085,
+     "half": 6.0941,
+     "inside": true,
+     "val": 3.7713524937814857,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": 0.11978963473342441,
+     "half": 5.9466,
+     "inside": true,
+     "val": 3.2802103652665755,
+     "tier": "photos"
+    },
+    {
+     "kind": "height",
+     "err": -0.020751306400454528,
+     "half": 0.93425,
+     "inside": true,
+     "val": 2.6874513064004546,
+     "tier": "photos"
+    },
+    {
+     "kind": "area",
+     "err": 0.5491704588240225,
+     "half": 9.6867,
+     "inside": true,
+     "val": 12.370829541175977,
+     "tier": "photos"
+    },
+    {
+     "kind": "footprint",
+     "err": 0.5491704588240225,
+     "half": 9.6867,
+     "inside": true,
+     "val": 12.370829541175977,
+     "tier": "photos"
+    }
+   ]
+  },
+  "47332915_video": {
+   "gates": {
+    "tier": "video",
+    "walls_n": 2,
+    "walls_ok": 0,
+    "walls_max_abs_err": 2.444489634733425,
+    "walls_rel_err_mean": 0.7452234346362618,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.1874513064004546,
+    "openings_gt": 2,
+    "openings_tp": 0,
+    "openings_missed": 2,
+    "openings_phantom": 2,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": 165.69519764699206,
+    "iou": 0.3763684035618313,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 2,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 17,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 0.789,
+    "stitch": 0.0,
+    "levels_yaw": 0.122,
+    "segment": 6.929,
+    "regions": 0.019,
+    "room_fit": 3.964,
+    "damage": 6.945,
+    "decode": 0.0,
+    "sfm": 0.0,
+    "depth_fusion": 77.331,
+    "total": 96.47
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": 2.444489634733425,
+     "half": 2.8686499999999997,
+     "inside": true,
+     "val": 3.2802103652665755,
+     "tier": "video"
+    },
+    {
+     "kind": "length",
+     "err": 2.444489634733424,
+     "half": 2.8686499999999997,
+     "inside": true,
+     "val": 3.2802103652665755,
+     "tier": "video"
+    },
+    {
+     "kind": "height",
+     "err": -0.1874513064004546,
+     "half": 0.6764,
+     "inside": true,
+     "val": 2.6874513064004546,
+     "tier": "video"
+    },
+    {
+     "kind": "area",
+     "err": 20.497870458824018,
+     "half": 6.0283,
+     "inside": false,
+     "val": 12.370829541175977,
+     "tier": "video"
+    },
+    {
+     "kind": "footprint",
+     "err": 20.497870458824018,
+     "half": 6.0283,
+     "inside": false,
+     "val": 12.370829541175977,
+     "tier": "video"
+    }
+   ]
+  },
+  "47332916_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.3898524937814858,
+    "walls_rel_err_mean": 0.05754089542352858,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.013648693599545236,
+    "openings_gt": 2,
+    "openings_tp": 2,
+    "openings_missed": 0,
+    "openings_phantom": 1,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -11.387510728258434,
+    "iou": 0.8861286677269933,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 7,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 2.382,
+    "stitch": 0.0,
+    "levels_yaw": 0.51,
+    "segment": 7.978,
+    "regions": 0.009,
+    "room_fit": 14.923,
+    "damage": 4.281,
+    "total": 31.623
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.038410365266575486,
+     "half": 0.07160000000000011,
+     "inside": true,
+     "val": 3.2802103652665755,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.3898524937814858,
+     "half": 0.07505000000000006,
+     "inside": false,
+     "val": 3.7713524937814857,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.038410365266575486,
+     "half": 0.07160000000000011,
+     "inside": true,
+     "val": 3.2802103652665755,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.3898524937814858,
+     "half": 0.07505000000000006,
+     "inside": false,
+     "val": 3.7713524937814857,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.013648693599545236,
+     "half": 0.06355,
+     "inside": true,
+     "val": 2.6874513064004546,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -1.408729541175978,
+     "half": 0.40639999999999965,
+     "inside": false,
+     "val": 12.370829541175977,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.08750000000000002,
+     "half": 0.06415000000000004,
+     "inside": false,
+     "val": 0.8528,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.04190000000000005,
+     "half": 0.11239999999999994,
+     "inside": true,
+     "val": 2.0721,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.22639999999999993,
+     "half": 0.08310000000000006,
+     "inside": false,
+     "val": 1.5845,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.08400000000000007,
+     "half": 0.11924999999999986,
+     "inside": true,
+     "val": 2.5429,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -1.408729541175978,
+     "half": 0.40639999999999965,
+     "inside": false,
+     "val": 12.370829541175977,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "47332918_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 1.2141524937814858,
+    "walls_rel_err_mean": 0.17246290104648387,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.009948693599545422,
+    "openings_gt": 2,
+    "openings_tp": 2,
+    "openings_missed": 0,
+    "openings_phantom": 2,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -14.058309795534168,
+    "iou": 0.859411553979698,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 7,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 4.834,
+    "stitch": 0.0,
+    "levels_yaw": 0.828,
+    "segment": 10.976,
+    "regions": 0.006,
+    "room_fit": 21.554,
+    "damage": 6.087,
+    "total": 46.314
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.02955249378148528,
+     "half": 0.07900000000000018,
+     "inside": true,
+     "val": 3.7713524937814857,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -1.0040103652665762,
+     "half": 0.08880000000000021,
+     "inside": false,
+     "val": 3.2802103652665755,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -1.2141524937814858,
+     "half": 0.06314999999999982,
+     "inside": false,
+     "val": 3.7713524937814857,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.17711036526657553,
+     "half": 0.0686500000000001,
+     "inside": false,
+     "val": 3.2802103652665755,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.009948693599545422,
+     "half": 0.06285000000000007,
+     "inside": true,
+     "val": 2.6874513064004546,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -1.739129541175977,
+     "half": 0.3998499999999998,
+     "inside": false,
+     "val": 12.370829541175977,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.4502,
+     "half": 0.06795000000000001,
+     "inside": false,
+     "val": 0.8528,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -1.0749,
+     "half": 0.1053,
+     "inside": false,
+     "val": 2.0721,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.12490000000000001,
+     "half": 0.09040000000000004,
+     "inside": false,
+     "val": 1.5845,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": 0.09600000000000009,
+     "half": 0.12244999999999995,
+     "inside": true,
+     "val": 2.5429,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -1.739129541175977,
+     "half": 0.3998499999999998,
+     "inside": false,
+     "val": 12.370829541175977,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "47334107_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.5848056825421941,
+    "walls_rel_err_mean": 0.2200059501792307,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.1372560558194995,
+    "openings_gt": 1,
+    "openings_tp": 1,
+    "openings_missed": 0,
+    "openings_phantom": 0,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": 24.816258889390124,
+    "iou": 0.40737698573976405,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 1,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 2.25,
+    "stitch": 0.001,
+    "levels_yaw": 0.89,
+    "segment": 12.066,
+    "regions": 0.009,
+    "room_fit": 15.363,
+    "damage": 3.137,
+    "total": 35.832
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": 0.5848056825421941,
+     "half": 0.08020000000000005,
+     "inside": false,
+     "val": 1.630494317457806,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.23653548869033614,
+     "half": 0.1048,
+     "inside": false,
+     "val": 2.9078354886903366,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": 0.5848056825421941,
+     "half": 0.08020000000000005,
+     "inside": false,
+     "val": 1.630494317457806,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.23653548869033614,
+     "half": 0.1048,
+     "inside": false,
+     "val": 2.9078354886903366,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.1372560558194995,
+     "half": 0.07069999999999999,
+     "inside": false,
+     "val": 2.5183439441805007,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": 1.1765907595882634,
+     "half": 0.32779999999999987,
+     "inside": false,
+     "val": 4.741209240411736,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.2821000000000001,
+     "half": 0.07429999999999998,
+     "inside": false,
+     "val": 0.7576,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.10919999999999996,
+     "half": 0.11270000000000002,
+     "inside": true,
+     "val": 1.9879,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": 1.1765907595882634,
+     "half": 0.32779999999999987,
+     "inside": false,
+     "val": 4.741209240411736,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "47334107_photos": {
+   "gates": {
+    "tier": "photos",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.49730568254219465,
+    "walls_rel_err_mean": 0.23712880378731166,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.5784439441805007,
+    "openings_gt": 1,
+    "openings_tp": 0,
+    "openings_missed": 1,
+    "openings_phantom": 0,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": 52.58554586322687,
+    "iou": 0.655359200114415,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 3,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "rooms": 12.35,
+    "stitch": 0.0,
+    "damage": 0.705,
+    "total": 13.103
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": 0.49730568254219465,
+     "half": 2.4766,
+     "inside": true,
+     "val": 1.630494317457806,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": 0.4921645113096629,
+     "half": 5.9466,
+     "inside": true,
+     "val": 2.9078354886903366,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": 0.49730568254219376,
+     "half": 2.4766,
+     "inside": true,
+     "val": 1.630494317457806,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": 0.49216451130966377,
+     "half": 5.9466,
+     "inside": true,
+     "val": 2.9078354886903366,
+     "tier": "photos"
+    },
+    {
+     "kind": "height",
+     "err": -0.5784439441805007,
+     "half": 1.1033,
+     "inside": true,
+     "val": 2.5183439441805007,
+     "tier": "photos"
+    },
+    {
+     "kind": "area",
+     "err": 2.4931907595882636,
+     "half": 5.04375,
+     "inside": true,
+     "val": 4.741209240411736,
+     "tier": "photos"
+    },
+    {
+     "kind": "footprint",
+     "err": 2.4931907595882636,
+     "half": 5.04375,
+     "inside": true,
+     "val": 4.741209240411736,
+     "tier": "photos"
+    }
+   ]
+  },
+  "47334107_video": {
+   "gates": {
+    "tier": "video",
+    "walls_n": 0,
+    "walls_ok": 0,
+    "walls_max_abs_err": null,
+    "walls_rel_err_mean": null,
+    "ceilings_n": 0,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": null,
+    "openings_gt": 0,
+    "openings_tp": 0,
+    "openings_missed": 0,
+    "openings_phantom": 0,
+    "openings_ok": 0,
+    "openings_rate": null,
+    "openings_pass": null,
+    "footprint_err_pct": -100.0,
+    "iou": 0.0,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 1,
+    "rooms_extra": 1,
+    "walls_missing": 4,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 3.018,
+    "stitch": 0.0,
+    "levels_yaw": 1.018,
+    "segment": 20.158,
+    "regions": 0.006,
+    "room_fit": 15.928,
+    "damage": 2.375,
+    "decode": 0.0,
+    "sfm": 0.0,
+    "depth_fusion": 147.347,
+    "total": 190.136
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "footprint",
+     "err": -4.741209240411736,
+     "half": 0.0,
+     "inside": false,
+     "val": 4.741209240411736,
+     "tier": "video"
+    }
+   ]
+  },
+  "47334109_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 1.8433645113096633,
+    "walls_rel_err_mean": 0.34765953178302966,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.01834394418050067,
+    "openings_gt": 1,
+    "openings_tp": 0,
+    "openings_missed": 1,
+    "openings_phantom": 1,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": 53.361719158561215,
+    "iou": 0.37210235382052487,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 1,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 1,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 2.067,
+    "stitch": 0.001,
+    "levels_yaw": 0.657,
+    "segment": 7.367,
+    "regions": 0.008,
+    "room_fit": 12.276,
+    "damage": 2.939,
+    "total": 27.445
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": 1.8433645113096633,
+     "half": 0.11350000000000016,
+     "inside": false,
+     "val": 2.9078354886903366,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.10009431745780573,
+     "half": 0.09430000000000005,
+     "inside": false,
+     "val": 1.630494317457806,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": 1.8433645113096633,
+     "half": 0.11350000000000016,
+     "inside": false,
+     "val": 2.9078354886903366,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.10009431745780573,
+     "half": 0.09430000000000005,
+     "inside": false,
+     "val": 1.630494317457806,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": -0.01834394418050067,
+     "half": 1.4710999999999999,
+     "inside": true,
+     "val": 2.5183439441805007,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": 2.529990759588264,
+     "half": 0.4697,
+     "inside": false,
+     "val": 4.741209240411736,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": 2.529990759588264,
+     "half": 0.4697,
+     "inside": false,
+     "val": 4.741209240411736,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "47334110_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.2645354886903366,
+    "walls_rel_err_mean": 0.11104786366359656,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.006956055819499429,
+    "openings_gt": 1,
+    "openings_tp": 1,
+    "openings_missed": 0,
+    "openings_phantom": 1,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -21.011712200350463,
+    "iou": 0.586081591096141,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 1,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 4,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 4.158,
+    "stitch": 0.001,
+    "levels_yaw": 0.74,
+    "segment": 13.066,
+    "regions": 0.009,
+    "room_fit": 27.858,
+    "damage": 2.696,
+    "total": 51.514
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.21379431745780586,
+     "half": 0.048350000000000004,
+     "inside": false,
+     "val": 1.630494317457806,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.2645354886903366,
+     "half": 0.06174999999999997,
+     "inside": false,
+     "val": 2.9078354886903366,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.21379431745780586,
+     "half": 0.048350000000000004,
+     "inside": false,
+     "val": 1.630494317457806,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.2645354886903366,
+     "half": 0.06174999999999997,
+     "inside": false,
+     "val": 2.9078354886903366,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.006956055819499429,
+     "half": 0.05954999999999999,
+     "inside": true,
+     "val": 2.5183439441805007,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -0.9962092404117362,
+     "half": 0.14755000000000007,
+     "inside": false,
+     "val": 4.741209240411736,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": 0.028999999999999915,
+     "half": 1.18295,
+     "inside": true,
+     "val": 0.7576,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.10129999999999995,
+     "half": 1.1825,
+     "inside": true,
+     "val": 1.9879,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -0.9962092404117362,
+     "half": 0.14755000000000007,
+     "inside": false,
+     "val": 4.741209240411736,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "48018382_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.059459689599096865,
+    "walls_rel_err_mean": 0.02832029296044711,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.01315300190954094,
+    "openings_gt": 1,
+    "openings_tp": 1,
+    "openings_missed": 0,
+    "openings_phantom": 2,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -2.448593302546098,
+    "iou": 0.9448877898952502,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 6,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 1.543,
+    "stitch": 0.0,
+    "levels_yaw": 0.227,
+    "segment": 2.678,
+    "regions": 0.002,
+    "room_fit": 7.095,
+    "damage": 2.658,
+    "total": 14.812
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.059459689599096865,
+     "half": 0.05635000000000001,
+     "inside": false,
+     "val": 1.478059689599097,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": 0.031624611040800055,
+     "half": 0.06905000000000006,
+     "inside": true,
+     "val": 1.9268753889591999,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.059459689599096865,
+     "half": 0.05635000000000001,
+     "inside": false,
+     "val": 1.478059689599097,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": 0.031624611040800055,
+     "half": 0.06905000000000006,
+     "inside": true,
+     "val": 1.9268753889591999,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.01315300190954094,
+     "half": 0.06095000000000006,
+     "inside": true,
+     "val": 2.461246998090459,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -0.06973683930117414,
+     "half": 0.1414000000000002,
+     "inside": true,
+     "val": 2.8480368393011743,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.18300000000000005,
+     "half": 1.179,
+     "inside": true,
+     "val": 0.7297,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": 0.3689,
+     "half": 1.18205,
+     "inside": true,
+     "val": 2.0339,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -0.06973683930117414,
+     "half": 0.1414000000000002,
+     "inside": true,
+     "val": 2.8480368393011743,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "48018382_photos": {
+   "gates": {
+    "tier": "photos",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 1.4731246110408005,
+    "walls_rel_err_mean": 0.662273013315795,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.8148469980904591,
+    "openings_gt": 1,
+    "openings_tp": 0,
+    "openings_missed": 1,
+    "openings_phantom": 0,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -22.36406603003984,
+    "iou": 0.3292285464020274,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "rooms": 11.981,
+    "stitch": 0.0,
+    "damage": 0.233,
+    "total": 12.261
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.8277596895990968,
+     "half": 7.50715,
+     "inside": true,
+     "val": 1.478059689599097,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": 1.4731246110408005,
+     "half": 5.9497,
+     "inside": true,
+     "val": 1.9268753889591999,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": -0.8277596895990968,
+     "half": 7.50715,
+     "inside": true,
+     "val": 1.478059689599097,
+     "tier": "photos"
+    },
+    {
+     "kind": "length",
+     "err": 1.4731246110408005,
+     "half": 5.9497,
+     "inside": true,
+     "val": 1.9268753889591999,
+     "tier": "photos"
+    },
+    {
+     "kind": "height",
+     "err": -0.8148469980904591,
+     "half": 0.6182000000000001,
+     "inside": false,
+     "val": 2.461246998090459,
+     "tier": "photos"
+    },
+    {
+     "kind": "area",
+     "err": -0.6369368393011743,
+     "half": 6.5954,
+     "inside": true,
+     "val": 2.8480368393011743,
+     "tier": "photos"
+    },
+    {
+     "kind": "footprint",
+     "err": -0.6369368393011743,
+     "half": 6.5954,
+     "inside": true,
+     "val": 2.8480368393011743,
+     "tier": "photos"
+    }
+   ]
+  },
+  "48018382_video": {
+   "gates": {
+    "tier": "video",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.33747538895919993,
+    "walls_rel_err_mean": 0.14716216579439387,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.4087530019095409,
+    "openings_gt": 1,
+    "openings_tp": 1,
+    "openings_missed": 0,
+    "openings_phantom": 4,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -27.342934211913274,
+    "iou": 0.7265495415809761,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 7,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 2.229,
+    "stitch": 0.0,
+    "levels_yaw": 0.323,
+    "segment": 4.346,
+    "regions": 0.002,
+    "room_fit": 9.105,
+    "damage": 4.517,
+    "decode": 0.0,
+    "sfm": 0.0,
+    "depth_fusion": 74.731,
+    "total": 95.384
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.33747538895919993,
+     "half": 0.8029999999999999,
+     "inside": true,
+     "val": 1.9268753889591999,
+     "tier": "video"
+    },
+    {
+     "kind": "length",
+     "err": -0.1761596895990971,
+     "half": 0.65855,
+     "inside": true,
+     "val": 1.478059689599097,
+     "tier": "video"
+    },
+    {
+     "kind": "length",
+     "err": -0.33747538895919993,
+     "half": 0.8029999999999999,
+     "inside": true,
+     "val": 1.9268753889591999,
+     "tier": "video"
+    },
+    {
+     "kind": "length",
+     "err": -0.1761596895990971,
+     "half": 0.65855,
+     "inside": true,
+     "val": 1.478059689599097,
+     "tier": "video"
+    },
+    {
+     "kind": "height",
+     "err": 0.4087530019095409,
+     "half": 0.504,
+     "inside": true,
+     "val": 2.461246998090459,
+     "tier": "video"
+    },
+    {
+     "kind": "area",
+     "err": -0.7787368393011742,
+     "half": 0.38070000000000004,
+     "inside": false,
+     "val": 2.8480368393011743,
+     "tier": "video"
+    },
+    {
+     "kind": "opening_width",
+     "err": 0.8503000000000001,
+     "half": 0.5122999999999999,
+     "inside": false,
+     "val": 0.7297,
+     "tier": "video"
+    },
+    {
+     "kind": "opening_height",
+     "err": 0.3304,
+     "half": 0.59395,
+     "inside": true,
+     "val": 2.0339,
+     "tier": "video"
+    },
+    {
+     "kind": "footprint",
+     "err": -0.7787368393011742,
+     "half": 0.38070000000000004,
+     "inside": false,
+     "val": 2.8480368393011743,
+     "tier": "video"
+    }
+   ]
+  },
+  "48018386_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 2,
+    "walls_max_abs_err": 0.3068596895990967,
+    "walls_rel_err_mean": 0.10744411510913628,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.02055300190954057,
+    "openings_gt": 1,
+    "openings_tp": 1,
+    "openings_missed": 0,
+    "openings_phantom": 4,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -20.183616706384406,
+    "iou": 0.7878464054274568,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 5,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 1.554,
+    "stitch": 0.0,
+    "levels_yaw": 0.422,
+    "segment": 4.24,
+    "regions": 0.003,
+    "room_fit": 8.244,
+    "damage": 2.048,
+    "total": 17.655
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.3068596895990967,
+     "half": 0.05069999999999997,
+     "inside": false,
+     "val": 1.478059689599097,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": 0.014024611040800217,
+     "half": 0.05625000000000002,
+     "inside": true,
+     "val": 1.9268753889591999,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.3068596895990967,
+     "half": 0.05069999999999997,
+     "inside": false,
+     "val": 1.478059689599097,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": 0.014024611040800217,
+     "half": 0.05625000000000002,
+     "inside": true,
+     "val": 1.9268753889591999,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.02055300190954057,
+     "half": 0.06345,
+     "inside": true,
+     "val": 2.461246998090459,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -0.5748368393011742,
+     "half": 0.10529999999999995,
+     "inside": false,
+     "val": 2.8480368393011743,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": -0.08840000000000003,
+     "half": 1.1818499999999998,
+     "inside": true,
+     "val": 0.7297,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": -0.12380000000000013,
+     "half": 1.1823000000000001,
+     "inside": true,
+     "val": 2.0339,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -0.5748368393011742,
+     "half": 0.10529999999999995,
+     "inside": false,
+     "val": 2.8480368393011743,
+     "tier": "lidar"
+    }
+   ]
+  },
+  "48018387_lidar": {
+   "gates": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.09635968959909702,
+    "walls_rel_err_mean": 0.04095856657280987,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.019053001909540956,
+    "openings_gt": 1,
+    "openings_tp": 1,
+    "openings_missed": 0,
+    "openings_phantom": 3,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -4.952072155631978,
+    "iou": 0.9204173004665828,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 11,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "timing": {
+    "openings": 1.572,
+    "stitch": 0.0,
+    "levels_yaw": 0.28,
+    "segment": 3.294,
+    "regions": 0.002,
+    "room_fit": 6.162,
+    "damage": 3.025,
+    "total": 15.024
+   },
+   "split": "test",
+   "calib": [
+    {
+     "kind": "length",
+     "err": -0.09635968959909702,
+     "half": 0.052100000000000035,
+     "inside": false,
+     "val": 1.478059689599097,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": 0.03222461104079999,
+     "half": 0.06120000000000014,
+     "inside": true,
+     "val": 1.9268753889591999,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": -0.09635968959909702,
+     "half": 0.052100000000000035,
+     "inside": false,
+     "val": 1.478059689599097,
+     "tier": "lidar"
+    },
+    {
+     "kind": "length",
+     "err": 0.03222461104079999,
+     "half": 0.06120000000000014,
+     "inside": true,
+     "val": 1.9268753889591999,
+     "tier": "lidar"
+    },
+    {
+     "kind": "height",
+     "err": 0.019053001909540956,
+     "half": 0.06384999999999996,
+     "inside": true,
+     "val": 2.461246998090459,
+     "tier": "lidar"
+    },
+    {
+     "kind": "area",
+     "err": -0.1410368393011745,
+     "half": 0.12370000000000014,
+     "inside": false,
+     "val": 2.8480368393011743,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_width",
+     "err": 0.29580000000000006,
+     "half": 1.19455,
+     "inside": true,
+     "val": 0.7297,
+     "tier": "lidar"
+    },
+    {
+     "kind": "opening_height",
+     "err": 0.2953999999999999,
+     "half": 1.1858499999999998,
+     "inside": true,
+     "val": 2.0339,
+     "tier": "lidar"
+    },
+    {
+     "kind": "footprint",
+     "err": -0.1410368393011745,
+     "half": 0.12370000000000014,
+     "inside": false,
+     "val": 2.8480368393011743,
+     "tier": "lidar"
+    }
+   ]
+  }
+ },
+ "repeatability": {
+  "lidar (48018382_lidar vs 48018386_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 1.4186,
+     "b": 1.1712000000000002,
+     "diff": 0.24739999999999984,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": -0.059459689599096865,
+     "bias_b": -0.3068596895990967
+    },
+    {
+     "wall": "E",
+     "a": 1.9585,
+     "b": 1.9409,
+     "diff": 0.017599999999999838,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": 0.031624611040800055,
+     "bias_b": 0.014024611040800217
+    },
+    {
+     "wall": "N",
+     "a": 1.4186,
+     "b": 1.1712000000000002,
+     "diff": 0.24739999999999984,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": -0.059459689599096865,
+     "bias_b": -0.3068596895990967
+    },
+    {
+     "wall": "W",
+     "a": 1.9585,
+     "b": 1.9409,
+     "diff": 0.017599999999999838,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": 0.031624611040800055,
+     "bias_b": 0.014024611040800217
+    }
+   ],
+   "height_a": 2.4744,
+   "height_b": 2.4818,
+   "height_spread": 0.007399999999999629,
+   "height_ok": true,
+   "height_bias": [
+    0.01315300190954094,
+    0.02055300190954057
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (48018382_lidar vs 48018387_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 1.4186,
+     "b": 1.3817,
+     "diff": 0.036900000000000155,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": -0.059459689599096865,
+     "bias_b": -0.09635968959909702
+    },
+    {
+     "wall": "E",
+     "a": 1.9585,
+     "b": 1.9590999999999998,
+     "diff": -0.0005999999999999339,
+     "tol": 0.01,
+     "ok": true,
+     "bias_a": 0.031624611040800055,
+     "bias_b": 0.03222461104079999
+    },
+    {
+     "wall": "N",
+     "a": 1.4186,
+     "b": 1.3817,
+     "diff": 0.036900000000000155,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": -0.059459689599096865,
+     "bias_b": -0.09635968959909702
+    },
+    {
+     "wall": "W",
+     "a": 1.9585,
+     "b": 1.9590999999999998,
+     "diff": -0.0005999999999999339,
+     "tol": 0.01,
+     "ok": true,
+     "bias_a": 0.031624611040800055,
+     "bias_b": 0.03222461104079999
+    }
+   ],
+   "height_a": 2.4744,
+   "height_b": 2.4803,
+   "height_spread": 0.005900000000000016,
+   "height_ok": true,
+   "height_bias": [
+    0.01315300190954094,
+    0.019053001909540956
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (48018386_lidar vs 48018387_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 1.1712000000000002,
+     "b": 1.3817,
+     "diff": -0.2104999999999997,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": -0.3068596895990967,
+     "bias_b": -0.09635968959909702
+    },
+    {
+     "wall": "E",
+     "a": 1.9409,
+     "b": 1.9590999999999998,
+     "diff": -0.018199999999999772,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": 0.014024611040800217,
+     "bias_b": 0.03222461104079999
+    },
+    {
+     "wall": "N",
+     "a": 1.1712000000000002,
+     "b": 1.3817,
+     "diff": -0.2104999999999997,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": -0.3068596895990967,
+     "bias_b": -0.09635968959909702
+    },
+    {
+     "wall": "W",
+     "a": 1.9409,
+     "b": 1.9590999999999998,
+     "diff": -0.018199999999999772,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": 0.014024611040800217,
+     "bias_b": 0.03222461104079999
+    }
+   ],
+   "height_a": 2.4818,
+   "height_b": 2.4803,
+   "height_spread": 0.0014999999999996128,
+   "height_ok": true,
+   "height_bias": [
+    0.02055300190954057,
+    0.019053001909540956
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (47332915_lidar vs 47332916_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 3.2784000000000004,
+     "b": 3.2418,
+     "diff": 0.03660000000000041,
+     "tol": 0.016401051826332877,
+     "ok": false,
+     "bias_a": -0.0018103652665750758,
+     "bias_b": -0.038410365266575486
+    },
+    {
+     "wall": "E",
+     "a": 3.7302,
+     "b": 3.3815,
+     "diff": 0.3487,
+     "tol": 0.01885676246890743,
+     "ok": false,
+     "bias_a": -0.04115249378148578,
+     "bias_b": -0.3898524937814858
+    },
+    {
+     "wall": "N",
+     "a": 3.2784000000000004,
+     "b": 3.2418,
+     "diff": 0.03660000000000041,
+     "tol": 0.016401051826332877,
+     "ok": false,
+     "bias_a": -0.0018103652665750758,
+     "bias_b": -0.038410365266575486
+    },
+    {
+     "wall": "W",
+     "a": 3.7302,
+     "b": 3.3815,
+     "diff": 0.3487,
+     "tol": 0.01885676246890743,
+     "ok": false,
+     "bias_a": -0.04115249378148578,
+     "bias_b": -0.3898524937814858
+    }
+   ],
+   "height_a": 2.6896,
+   "height_b": 2.7011,
+   "height_spread": 0.011499999999999844,
+   "height_ok": false,
+   "height_bias": [
+    0.0021486935995453926,
+    0.013648693599545236
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (47332915_lidar vs 47332918_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 3.2784000000000004,
+     "b": 0.8269000000000002,
+     "diff": 2.4515000000000002,
+     "tol": 0.016401051826332877,
+     "ok": false,
+     "bias_a": -0.0018103652665750758,
+     "bias_b": -2.4533103652665753
+    },
+    {
+     "wall": "E",
+     "a": 3.7302,
+     "b": 2.5572,
+     "diff": 1.173,
+     "tol": 0.01885676246890743,
+     "ok": false,
+     "bias_a": -0.04115249378148578,
+     "bias_b": -1.2141524937814858
+    },
+    {
+     "wall": "N",
+     "a": 3.2784000000000004,
+     "b": 3.1031,
+     "diff": 0.17530000000000046,
+     "tol": 0.016401051826332877,
+     "ok": false,
+     "bias_a": -0.0018103652665750758,
+     "bias_b": -0.17711036526657553
+    },
+    {
+     "wall": "W",
+     "a": 3.7302,
+     "b": 3.7418000000000005,
+     "diff": -0.011600000000000499,
+     "tol": 0.01885676246890743,
+     "ok": true,
+     "bias_a": -0.04115249378148578,
+     "bias_b": -0.02955249378148528
+    }
+   ],
+   "height_a": 2.6896,
+   "height_b": 2.6974,
+   "height_spread": 0.007800000000000029,
+   "height_ok": true,
+   "height_bias": [
+    0.0021486935995453926,
+    0.009948693599545422
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (47332916_lidar vs 47332918_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 3.2418,
+     "b": 0.8269000000000002,
+     "diff": 2.4149,
+     "tol": 0.016401051826332877,
+     "ok": false,
+     "bias_a": -0.038410365266575486,
+     "bias_b": -2.4533103652665753
+    },
+    {
+     "wall": "E",
+     "a": 3.3815,
+     "b": 2.5572,
+     "diff": 0.8243,
+     "tol": 0.01885676246890743,
+     "ok": false,
+     "bias_a": -0.3898524937814858,
+     "bias_b": -1.2141524937814858
+    },
+    {
+     "wall": "N",
+     "a": 3.2418,
+     "b": 3.1031,
+     "diff": 0.13870000000000005,
+     "tol": 0.016401051826332877,
+     "ok": false,
+     "bias_a": -0.038410365266575486,
+     "bias_b": -0.17711036526657553
+    },
+    {
+     "wall": "W",
+     "a": 3.3815,
+     "b": 3.7418000000000005,
+     "diff": -0.3603000000000005,
+     "tol": 0.01885676246890743,
+     "ok": false,
+     "bias_a": -0.3898524937814858,
+     "bias_b": -0.02955249378148528
+    }
+   ],
+   "height_a": 2.7011,
+   "height_b": 2.6974,
+   "height_spread": 0.0036999999999998145,
+   "height_ok": true,
+   "height_bias": [
+    0.013648693599545236,
+    0.009948693599545422
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (47334107_lidar vs 47334109_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 2.6713000000000005,
+     "b": 4.7512,
+     "diff": -2.0798999999999994,
+     "tol": 0.014539177443451684,
+     "ok": false,
+     "bias_a": -0.23653548869033614,
+     "bias_b": 1.8433645113096633
+    },
+    {
+     "wall": "E",
+     "a": 2.2153,
+     "b": 1.5304000000000002,
+     "diff": 0.6848999999999998,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": 0.5848056825421941,
+     "bias_b": -0.10009431745780573
+    },
+    {
+     "wall": "N",
+     "a": 2.6713000000000005,
+     "b": 4.7512,
+     "diff": -2.0798999999999994,
+     "tol": 0.014539177443451684,
+     "ok": false,
+     "bias_a": -0.23653548869033614,
+     "bias_b": 1.8433645113096633
+    },
+    {
+     "wall": "W",
+     "a": 2.2153,
+     "b": 1.5304000000000002,
+     "diff": 0.6848999999999998,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": 0.5848056825421941,
+     "bias_b": -0.10009431745780573
+    }
+   ],
+   "height_a": 2.6556,
+   "height_b": 2.5,
+   "height_spread": 0.15560000000000018,
+   "height_ok": false,
+   "height_bias": [
+    0.1372560558194995,
+    -0.01834394418050067
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (47334107_lidar vs 47334110_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 2.6713000000000005,
+     "b": 1.7659000000000002,
+     "diff": 0.9054000000000002,
+     "tol": 0.014539177443451684,
+     "ok": false,
+     "bias_a": -0.23653548869033614,
+     "bias_b": -1.1419354886903363
+    },
+    {
+     "wall": "E",
+     "a": 2.2153,
+     "b": 1.4735,
+     "diff": 0.7418,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": 0.5848056825421941,
+     "bias_b": -0.1569943174578059
+    },
+    {
+     "wall": "N",
+     "a": 2.6713000000000005,
+     "b": 1.7659000000000002,
+     "diff": 0.9054000000000002,
+     "tol": 0.014539177443451684,
+     "ok": false,
+     "bias_a": -0.23653548869033614,
+     "bias_b": -1.1419354886903363
+    },
+    {
+     "wall": "W",
+     "a": 2.2153,
+     "b": 1.4735,
+     "diff": 0.7418,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": 0.5848056825421941,
+     "bias_b": -0.1569943174578059
+    }
+   ],
+   "height_a": 2.6556,
+   "height_b": 2.5,
+   "height_spread": 0.15560000000000018,
+   "height_ok": false,
+   "height_bias": [
+    0.1372560558194995,
+    -0.01834394418050067
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (47334109_lidar vs 47334110_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 4.7512,
+     "b": 1.7659000000000002,
+     "diff": 2.9852999999999996,
+     "tol": 0.014539177443451684,
+     "ok": false,
+     "bias_a": 1.8433645113096633,
+     "bias_b": -1.1419354886903363
+    },
+    {
+     "wall": "E",
+     "a": 1.5304000000000002,
+     "b": 1.4735,
+     "diff": 0.05690000000000017,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": -0.10009431745780573,
+     "bias_b": -0.1569943174578059
+    },
+    {
+     "wall": "N",
+     "a": 4.7512,
+     "b": 1.7659000000000002,
+     "diff": 2.9852999999999996,
+     "tol": 0.014539177443451684,
+     "ok": false,
+     "bias_a": 1.8433645113096633,
+     "bias_b": -1.1419354886903363
+    },
+    {
+     "wall": "W",
+     "a": 1.5304000000000002,
+     "b": 1.4735,
+     "diff": 0.05690000000000017,
+     "tol": 0.01,
+     "ok": false,
+     "bias_a": -0.10009431745780573,
+     "bias_b": -0.1569943174578059
+    }
+   ],
+   "height_a": 2.5,
+   "height_b": 2.5,
+   "height_spread": 0.0,
+   "height_ok": true,
+   "height_bias": [
+    -0.01834394418050067,
+    -0.01834394418050067
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (42897501_lidar vs 42897504_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 1.7951,
+     "b": 1.2228000000000003,
+     "diff": 0.5722999999999996,
+     "tol": 0.010781523372263806,
+     "ok": false,
+     "bias_a": -0.3612046744527613,
+     "bias_b": -0.9335046744527609
+    },
+    {
+     "wall": "E",
+     "a": 1.7531999999999999,
+     "b": 4.8057,
+     "diff": -3.0525,
+     "tol": 0.019968344908154884,
+     "ok": false,
+     "bias_a": -2.2404689816309773,
+     "bias_b": 0.8120310183690229
+    },
+    {
+     "wall": "N",
+     "a": 1.7951,
+     "b": 1.2228000000000003,
+     "diff": 0.5722999999999996,
+     "tol": 0.010781523372263806,
+     "ok": false,
+     "bias_a": -0.3612046744527613,
+     "bias_b": -0.9335046744527609
+    },
+    {
+     "wall": "W",
+     "a": 1.7532,
+     "b": 4.8057,
+     "diff": -3.0524999999999998,
+     "tol": 0.019968344908154884,
+     "ok": false,
+     "bias_a": -2.240468981630977,
+     "bias_b": 0.8120310183690229
+    }
+   ],
+   "height_a": 2.3763,
+   "height_b": 2.5,
+   "height_spread": 0.12369999999999992,
+   "height_ok": false,
+   "height_bias": [
+    0.017664864621806498,
+    0.14136486462180642
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (42897501_lidar vs 42897508_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 1.7951,
+     "b": 1.6913,
+     "diff": 0.10379999999999989,
+     "tol": 0.010781523372263806,
+     "ok": false,
+     "bias_a": -0.3612046744527613,
+     "bias_b": -0.46500467445276117
+    },
+    {
+     "wall": "E",
+     "a": 1.7531999999999999,
+     "b": 1.7345,
+     "diff": 0.01869999999999994,
+     "tol": 0.019968344908154884,
+     "ok": true,
+     "bias_a": -2.2404689816309773,
+     "bias_b": -2.2591689816309772
+    },
+    {
+     "wall": "N",
+     "a": 1.7951,
+     "b": 1.6913,
+     "diff": 0.10379999999999989,
+     "tol": 0.010781523372263806,
+     "ok": false,
+     "bias_a": -0.3612046744527613,
+     "bias_b": -0.46500467445276117
+    },
+    {
+     "wall": "W",
+     "a": 1.7532,
+     "b": 1.7345,
+     "diff": 0.01870000000000016,
+     "tol": 0.019968344908154884,
+     "ok": true,
+     "bias_a": -2.240468981630977,
+     "bias_b": -2.2591689816309772
+    }
+   ],
+   "height_a": 2.3763,
+   "height_b": 2.3649,
+   "height_spread": 0.011400000000000077,
+   "height_ok": false,
+   "height_bias": [
+    0.017664864621806498,
+    0.006264864621806421
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (42897504_lidar vs 42897508_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 1.2228000000000003,
+     "b": 1.6913,
+     "diff": -0.4684999999999997,
+     "tol": 0.010781523372263806,
+     "ok": false,
+     "bias_a": -0.9335046744527609,
+     "bias_b": -0.46500467445276117
+    },
+    {
+     "wall": "E",
+     "a": 4.8057,
+     "b": 1.7345,
+     "diff": 3.0712,
+     "tol": 0.019968344908154884,
+     "ok": false,
+     "bias_a": 0.8120310183690229,
+     "bias_b": -2.2591689816309772
+    },
+    {
+     "wall": "N",
+     "a": 1.2228000000000003,
+     "b": 1.6913,
+     "diff": -0.4684999999999997,
+     "tol": 0.010781523372263806,
+     "ok": false,
+     "bias_a": -0.9335046744527609,
+     "bias_b": -0.46500467445276117
+    },
+    {
+     "wall": "W",
+     "a": 4.8057,
+     "b": 1.7345,
+     "diff": 3.0712,
+     "tol": 0.019968344908154884,
+     "ok": false,
+     "bias_a": 0.8120310183690229,
+     "bias_b": -2.2591689816309772
+    }
+   ],
+   "height_a": 2.5,
+   "height_b": 2.3649,
+   "height_spread": 0.1351,
+   "height_ok": false,
+   "height_bias": [
+    0.14136486462180642,
+    0.006264864621806421
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (47204552_lidar vs 47204554_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 3.5248,
+     "b": 1.1372,
+     "diff": 2.3876,
+     "tol": 0.018166673745649318,
+     "ok": false,
+     "bias_a": -0.1085347491298636,
+     "bias_b": -2.4961347491298636
+    },
+    {
+     "wall": "E",
+     "a": 7.73,
+     "b": 1.9396,
+     "diff": 5.7904,
+     "tol": 0.038702403456392365,
+     "ok": false,
+     "bias_a": -0.010480691278472065,
+     "bias_b": -5.800880691278472
+    },
+    {
+     "wall": "N",
+     "a": 3.5248,
+     "b": 1.1372,
+     "diff": 2.3876,
+     "tol": 0.018166673745649318,
+     "ok": false,
+     "bias_a": -0.1085347491298636,
+     "bias_b": -2.4961347491298636
+    },
+    {
+     "wall": "W",
+     "a": 7.73,
+     "b": 1.9396,
+     "diff": 5.7904,
+     "tol": 0.038702403456392365,
+     "ok": false,
+     "bias_a": -0.010480691278472065,
+     "bias_b": -5.800880691278472
+    }
+   ],
+   "height_a": 2.3647,
+   "height_b": 2.5,
+   "height_spread": 0.13529999999999998,
+   "height_ok": false,
+   "height_bias": [
+    -0.0022104442506476474,
+    0.13308955574935233
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (47204552_lidar vs 47204556_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 3.5248,
+     "b": 3.6124,
+     "diff": -0.08760000000000012,
+     "tol": 0.018166673745649318,
+     "ok": false,
+     "bias_a": -0.1085347491298636,
+     "bias_b": -0.020934749129863484
+    },
+    {
+     "wall": "E",
+     "a": 7.73,
+     "b": 7.629199999999999,
+     "diff": 0.10080000000000133,
+     "tol": 0.038702403456392365,
+     "ok": false,
+     "bias_a": -0.010480691278472065,
+     "bias_b": -0.1112806912784734
+    },
+    {
+     "wall": "N",
+     "a": 3.5248,
+     "b": 3.6124,
+     "diff": -0.08760000000000012,
+     "tol": 0.018166673745649318,
+     "ok": false,
+     "bias_a": -0.1085347491298636,
+     "bias_b": -0.020934749129863484
+    },
+    {
+     "wall": "W",
+     "a": 7.73,
+     "b": 7.629200000000001,
+     "diff": 0.10079999999999956,
+     "tol": 0.038702403456392365,
+     "ok": false,
+     "bias_a": -0.010480691278472065,
+     "bias_b": -0.11128069127847162
+    }
+   ],
+   "height_a": 2.3647,
+   "height_b": 2.3767,
+   "height_spread": 0.01200000000000001,
+   "height_ok": false,
+   "height_bias": [
+    -0.0022104442506476474,
+    0.009789555749352363
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  },
+  "lidar (47204554_lidar vs 47204556_lidar)": {
+   "walls": [
+    {
+     "wall": "S",
+     "a": 1.1372,
+     "b": 3.6124,
+     "diff": -2.4752,
+     "tol": 0.018166673745649318,
+     "ok": false,
+     "bias_a": -2.4961347491298636,
+     "bias_b": -0.020934749129863484
+    },
+    {
+     "wall": "E",
+     "a": 1.9396,
+     "b": 7.629199999999999,
+     "diff": -5.689599999999999,
+     "tol": 0.038702403456392365,
+     "ok": false,
+     "bias_a": -5.800880691278472,
+     "bias_b": -0.1112806912784734
+    },
+    {
+     "wall": "N",
+     "a": 1.1372,
+     "b": 3.6124,
+     "diff": -2.4752,
+     "tol": 0.018166673745649318,
+     "ok": false,
+     "bias_a": -2.4961347491298636,
+     "bias_b": -0.020934749129863484
+    },
+    {
+     "wall": "W",
+     "a": 1.9396,
+     "b": 7.629200000000001,
+     "diff": -5.6896,
+     "tol": 0.038702403456392365,
+     "ok": false,
+     "bias_a": -5.800880691278472,
+     "bias_b": -0.11128069127847162
+    }
+   ],
+   "height_a": 2.5,
+   "height_b": 2.3767,
+   "height_spread": 0.12329999999999997,
+   "height_ok": false,
+   "height_bias": [
+    0.13308955574935233,
+    0.009789555749352363
+   ],
+   "walls_ok": false,
+   "verdict": "UNREPEATABLE",
+   "split": "test"
+  }
+ },
+ "ablation": {
+  "48018382_lidar": {
+   "on": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.059459689599096865,
+    "walls_rel_err_mean": 0.02832029296044711,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.01315300190954094,
+    "openings_gt": 1,
+    "openings_tp": 1,
+    "openings_missed": 0,
+    "openings_phantom": 2,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -2.448593302546098,
+    "iou": 0.9448877898952502,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 6,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "off": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 1.2051596895990968,
+    "walls_rel_err_mean": 0.4111277534514642,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.00425300190954081,
+    "openings_gt": 1,
+    "openings_tp": 1,
+    "openings_missed": 0,
+    "openings_phantom": 3,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -36.55629818175524,
+    "iou": 0.6344564772004054,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   }
+  },
+  "47332915_lidar": {
+   "on": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 2,
+    "walls_max_abs_err": 0.04115249378148578,
+    "walls_rel_err_mean": 0.005731885713456775,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.0021486935995453926,
+    "openings_gt": 2,
+    "openings_tp": 2,
+    "openings_missed": 0,
+    "openings_phantom": 0,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -1.1481003816537623,
+    "iou": 0.9885422508891428,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": true,
+    "damage_tp": 0,
+    "damage_fp": 8,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "off": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 1,
+    "walls_max_abs_err": 1.2332524937814857,
+    "walls_rel_err_mean": 0.09405926502204941,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.00725130640045446,
+    "openings_gt": 2,
+    "openings_tp": 2,
+    "openings_missed": 0,
+    "openings_phantom": 3,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -2.9458779620476063,
+    "iou": 0.9705446704311036,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   }
+  },
+  "47334107_lidar": {
+   "on": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.5848056825421941,
+    "walls_rel_err_mean": 0.2200059501792307,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.1372560558194995,
+    "openings_gt": 1,
+    "openings_tp": 1,
+    "openings_missed": 0,
+    "openings_phantom": 0,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": 24.816258889390124,
+    "iou": 0.40737698573976405,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 1,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "off": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 0.5686056825421946,
+    "walls_rel_err_mean": 0.24722702271819572,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.01834394418050067,
+    "openings_gt": 1,
+    "openings_tp": 1,
+    "openings_missed": 0,
+    "openings_phantom": 0,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": 15.219551025881298,
+    "iou": 0.4480685250746472,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 1,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   }
+  },
+  "42897501_lidar": {
+   "on": {
+    "tier": "lidar",
+    "walls_n": 2,
+    "walls_ok": 0,
+    "walls_max_abs_err": 2.263068981630977,
+    "walls_rel_err_mean": 0.5666641356707438,
+    "ceilings_n": 1,
+    "ceilings_ok": 0,
+    "ceilings_max_abs_err": 0.018664864621806387,
+    "openings_gt": 4,
+    "openings_tp": 1,
+    "openings_missed": 3,
+    "openings_phantom": 2,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -56.966020703944956,
+    "iou": 0.7958190589173626,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 1,
+    "walls_missing": 2,
+    "walls_pass": false,
+    "ceiling_pass": false,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "off": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 0,
+    "walls_max_abs_err": 1.7048689816309768,
+    "walls_rel_err_mean": 0.3085175931123715,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.00856486462180639,
+    "openings_gt": 4,
+    "openings_tp": 0,
+    "openings_missed": 4,
+    "openings_phantom": 2,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -53.58568357313148,
+    "iou": 0.7216161550334249,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 1,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   }
+  },
+  "47204552_lidar": {
+   "on": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 2,
+    "walls_max_abs_err": 0.1085347491298636,
+    "walls_rel_err_mean": 0.015612974025746143,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.0022104442506476474,
+    "openings_gt": 5,
+    "openings_tp": 5,
+    "openings_missed": 0,
+    "openings_phantom": 1,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -3.1182087653396247,
+    "iou": 0.9688144988624667,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 11,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   },
+   "off": {
+    "tier": "lidar",
+    "walls_n": 4,
+    "walls_ok": 2,
+    "walls_max_abs_err": 0.15523474912986357,
+    "walls_rel_err_mean": 0.022356094836506562,
+    "ceilings_n": 1,
+    "ceilings_ok": 1,
+    "ceilings_max_abs_err": 0.009110444250647554,
+    "openings_gt": 5,
+    "openings_tp": 3,
+    "openings_missed": 2,
+    "openings_phantom": 4,
+    "openings_ok": 0,
+    "openings_rate": 0.0,
+    "openings_pass": false,
+    "footprint_err_pct": -4.464046000622992,
+    "iou": 0.9553727071532575,
+    "adjacency_precision": 1.0,
+    "adjacency_recall": 1.0,
+    "overlap_area": 0.0,
+    "rooms_missing": 0,
+    "rooms_extra": 0,
+    "walls_missing": 0,
+    "walls_pass": false,
+    "ceiling_pass": true,
+    "footprint_pass": false,
+    "damage_tp": 0,
+    "damage_fp": 0,
+    "damage_fn": 0,
+    "damage_class_ok": 0
+   }
+  }
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "schema_version": "floorscan-1.0",
+ "capture": {
+  "tier": "video",
+  "source": "video/colmap+depth_anything_v2",
+  "device": "iPhone 15+ (video)",
+  "frames": 242
+ },
+ "units": "m",
+ "rooms": [],
+ "plan": {
+  "rooms": [],
+  "adjacency": [],
+  "footprint_area": {
+   "value": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "sigma": 0.0
+  },
+  "wall_thickness": 0.12,
+  "overlaps": [],
+  "drift": {
+   "method": "plane-anchored per-room pose refinement + door-anchored room pose graph (loop closure)",
+   "local_planar": true,
+   "door_graph": true,
+   "links": 0,
+   "loops": 1,
+   "door_residual_rms_before": 0.0,
+   "door_residual_rms_after": 0.0,
+   "wall_thickness_source": "default"
+  }
+ },
+ "quality": {
+  "warnings": [
+   "NO ROOM RECONSTRUCTED: no closed free-space region was found (capture too short, held too low, or floor and ceiling never seen) - recapture following capture/PROTOCOL.md",
+   "scale from the metric depth network (x0.341) combined with the ceiling-height prior (x0.227): +-8 % (no printed card, no door seen)",
+   "sfm: 237/242 informative key-frames registered (16 blank/blurred key-frames skipped)",
+   "schema validation: 1 issue(s), first: rooms: [] should be non-empty"
+  ],
+  "hazards": [],
+  "scale": {
+   "source": "depth network + ceiling prior",
+   "scale_net_over_final": 1.3316,
+   "scale_ceiling_prior_over_final": 0.8857
+  }
+ },
+ "timing": {
+  "openings": 0.0,
+  "stitch": 0.0,
+  "levels_yaw": 0.313,
+  "segment": 13.336,
+  "regions": 0.002,
+  "room_fit": 0.0,
+  "damage": 0.0,
+  "decode": 0.0,
+  "sfm": 0.0,
+  "depth_fusion": 162.452,
+  "total": 176.279
+ }
+}

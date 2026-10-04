@@ -1,0 +1,101 @@
+{
+ "world": "arkitscenes",
+ "coverage": "captured_room",
+ "visit": "471952",
+ "laser_stations": [
+  "204290",
+  "204294",
+  "204298",
+  "204300",
+  "204301"
+ ],
+ "wall_thickness": 0.12,
+ "adjacency": [],
+ "rooms": [
+  {
+   "name": "room",
+   "x0": 0.0,
+   "y0": 0.0,
+   "w": 3.6333347491298635,
+   "d": 7.7404806912784725,
+   "ceiling_height": 2.3669104442506477,
+   "floor_area": 28.12375747059082,
+   "walls": {
+    "S": 3.6333347491298635,
+    "N": 3.6333347491298635,
+    "E": 7.7404806912784725,
+    "W": 7.7404806912784725
+   },
+   "openings": [
+    {
+     "id": "room.S.0",
+     "wall": "S",
+     "center": 0.6824,
+     "width": 0.8747,
+     "height": 2.0095,
+     "sill": 0.0,
+     "kind": "door",
+     "link": null
+    },
+    {
+     "id": "room.E.1",
+     "wall": "E",
+     "center": 1.7446,
+     "width": 0.4075,
+     "height": 1.7694,
+     "sill": 0.32,
+     "kind": "window",
+     "link": null
+    },
+    {
+     "id": "room.E.2",
+     "wall": "E",
+     "center": 5.2185,
+     "width": 0.4139,
+     "height": 1.8048,
+     "sill": 0.2738,
+     "kind": "window",
+     "link": null
+    },
+    {
+     "id": "room.W.3",
+     "wall": "W",
+     "center": 2.192,
+     "width": 2.6735,
+     "height": 1.9271,
+     "sill": 0.12,
+     "kind": "window",
+     "link": null
+    },
+    {
+     "id": "room.W.4",
+     "wall": "W",
+     "center": 6.2439,
+     "width": 1.7864,
+     "height": 1.7809,
+     "sill": 0.3052,
+     "kind": "window",
+     "link": null
+    }
+   ],
+   "damage": [],
+   "hazards": {
+    "low_light": false,
+    "glossy_floor": false,
+    "mirrors": 0
+   },
+   "ignore_openings": [
+    {
+     "wall": "N",
+     "u0": 0.0,
+     "u1": 3.63,
+     "note": "kitchen units (oven doors, glass fronts)"
+    }
+   ]
+  }
+ ],
+ "method": "dataprep/room_gt.py: laser stations inside the captured room, sharpest-histogram yaw, floor/ceiling = strongest horizontal planes, each main wall = strongest range^2-weighted plane in a manually chosen window (W:-0.47:-0.39,E:3.12:3.22,S:-3.03:-2.95,N:4.72:4.80)",
+ "openings_reliable": true,
+ "note": "Long rectangular room; shelves along the west side are furniture.",
+ "openings_method": "dataprep/openings_gt.py: openings marked roughly on laser elevation images by a person, edges snapped to the laser wall (50 % solid-share crossing, 1 cm columns)"
+}

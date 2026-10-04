@@ -1,0 +1,71 @@
+{
+ "world": "arkitscenes",
+ "visit": "421337",
+ "laser_stations": [
+  "170079",
+  "170080",
+  "170081"
+ ],
+ "wall_thickness": 0.12,
+ "adjacency": [],
+ "rooms": [
+  {
+   "name": "room",
+   "x0": 0.0,
+   "y0": 0.0,
+   "w": 3.710981371737704,
+   "d": 4.212867411586034,
+   "ceiling_height": 3.053580240485701,
+   "floor_area": 15.63387248599661,
+   "walls": {
+    "S": 3.710981371737704,
+    "N": 3.710981371737704,
+    "E": 4.212867411586034,
+    "W": 4.212867411586034
+   },
+   "openings": [
+    {
+     "id": "room.W.0",
+     "wall": "W",
+     "center": 0.495,
+     "width": 0.99,
+     "height": 1.935,
+     "sill": 0.0,
+     "kind": "door",
+     "link": null
+    }
+   ],
+   "damage": [],
+   "hazards": {
+    "low_light": false,
+    "glossy_floor": false,
+    "mirrors": 0
+   },
+   "ignore_openings": [
+    {
+     "wall": "E",
+     "u0": 0.5,
+     "u1": 4.05,
+     "note": "bay-window recess"
+    },
+    {
+     "wall": "N",
+     "u0": 0.0,
+     "u1": 0.72,
+     "note": "alcove left of the chimney breast"
+    },
+    {
+     "wall": "N",
+     "u0": 2.42,
+     "u1": 3.71,
+     "note": "alcove right of the chimney breast"
+    }
+   ]
+  }
+ ],
+ "method": "dataprep/room_gt.py: laser stations inside the captured room, sharpest-histogram yaw, floor/ceiling = strongest horizontal planes, each main wall = strongest range^2-weighted plane in a manually chosen window (W:-2.50:-2.38,E:1.22:1.32,S:-3.70:-3.60,N:0.50:0.60)",
+ "openings_reliable": true,
+ "note": "Bay window on the east side (recess x 1.40-1.75 excluded, main face = the wall stubs at x 1.27); chimney breast on the north side (face y 0.55; alcoves behind it at 0.78-0.86 excluded).",
+ "openings_method": "dataprep/openings_gt.py: openings marked roughly on laser elevation images by a person, edges snapped to the laser wall (50 % solid-share crossing, 1 cm columns)",
+ "coverage": "captured_room"
+}

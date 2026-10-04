@@ -1,0 +1,218 @@
+{
+ "_note": "fitted by bench/calibrate.py on the DEV captures of ..\\..\\..\\..\\CHINMA~1\\AppData\\Local\\Temp\\dev_metrics.json",
+ "lidar": {
+  "length": {
+   "k": 3.0,
+   "n": 40,
+   "coverage_before": 0.55
+  },
+  "height": {
+   "k": 3.0,
+   "n": 10,
+   "coverage_before": 0.9
+  },
+  "area": {
+   "k": 3.0,
+   "n": 10,
+   "coverage_before": 0.5
+  },
+  "opening_width": {
+   "k": 3.0,
+   "n": 12,
+   "coverage_before": 0.167
+  },
+  "opening_height": {
+   "k": 3.0,
+   "n": 12,
+   "coverage_before": 0.167
+  },
+  "footprint": {
+   "k": 3.0,
+   "n": 10,
+   "coverage_before": 0.5
+  }
+ },
+ "photos": {
+  "length": {
+   "k": 3.0,
+   "n": 16,
+   "coverage_before": 0.875
+  },
+  "height": {
+   "k": 1.317,
+   "n": 4,
+   "coverage_before": 0.75
+  },
+  "area": {
+   "k": 1.05,
+   "n": 4,
+   "coverage_before": 1.0
+  },
+  "footprint": {
+   "k": 1.05,
+   "n": 4,
+   "coverage_before": 1.0
+  }
+ },
+ "video": {
+  "length": {
+   "k": 3.0,
+   "n": 8,
+   "coverage_before": 0.75
+  },
+  "height": {
+   "k": 1.05,
+   "n": 2,
+   "coverage_before": 1.0
+  },
+  "area": {
+   "k": 1.05,
+   "n": 2,
+   "coverage_before": 0.5
+  },
+  "opening_width": {
+   "k": 1.05,
+   "n": 1,
+   "coverage_before": 0.0
+  },
+  "opening_height": {
+   "k": 1.05,
+   "n": 1,
+   "coverage_before": 1.0
+  },
+  "footprint": {
+   "k": 3.0,
+   "n": 3,
+   "coverage_before": 0.333
+  }
+ },
+ "_lidar_height": {
+  "scale": 1.0107,
+  "spread": 0.0064,
+  "n": 9,
+  "sessions": [
+   {
+    "session": "42444946",
+    "laser": 3.0536,
+    "raw": 3.0262,
+    "ratio": 1.00904,
+    "used": true
+   },
+   {
+    "session": "42444949",
+    "laser": 3.0536,
+    "raw": 3.0377,
+    "ratio": 1.00521,
+    "used": true
+   },
+   {
+    "session": "42444950",
+    "laser": 3.0536,
+    "raw": 3.0755,
+    "ratio": 0.99288,
+    "used": true
+   },
+   {
+    "session": "45261615",
+    "laser": 2.3746,
+    "raw": 2.3399,
+    "ratio": 1.01481,
+    "used": true
+   },
+   {
+    "session": "45261619",
+    "laser": 2.3746,
+    "raw": 2.3411,
+    "ratio": 1.0143,
+    "used": true
+   },
+   {
+    "session": "45261620",
+    "laser": 2.3746,
+    "raw": 2.3471,
+    "ratio": 1.01173,
+    "used": true
+   },
+   {
+    "session": "42898811",
+    "laser": 2.7041,
+    "raw": 2.6669,
+    "ratio": 1.01396,
+    "used": true
+   },
+   {
+    "session": "42898816",
+    "laser": 2.7041,
+    "raw": 1.7636,
+    "ratio": 1.53329,
+    "used": false
+   },
+   {
+    "session": "42898817",
+    "laser": 2.7041,
+    "raw": 1.7382,
+    "ratio": 1.55569,
+    "used": false
+   },
+   {
+    "session": "42445022",
+    "laser": 2.3156,
+    "raw": 2.2911,
+    "ratio": 1.01066,
+    "used": true
+   },
+   {
+    "session": "42445026",
+    "laser": 2.3156,
+    "raw": 2.2962,
+    "ratio": 1.00845,
+    "used": true
+   }
+  ],
+  "note": "fitted by dataprep/fit_lidar_scale.py on DEV sessions only; applied to LiDAR floor-to-ceiling only (a range rescale made walls worse on DEV)"
+ },
+ "_depth_net": {
+  "f0": 0.8174,
+  "sigma": 0.1536,
+  "n": 6,
+  "captures": [
+   {
+    "capture": "42444946_photos",
+    "f_norm": 0.8377628842153917,
+    "ratio_true_over_net": 1.0914651093346188,
+    "f0": 0.7675580987889851
+   },
+   {
+    "capture": "42444946_video",
+    "f_norm": 0.8386295354749248,
+    "ratio_true_over_net": 0.658091844376957,
+    "f0": 1.2743350987260607
+   },
+   {
+    "capture": "45261615_photos",
+    "f_norm": 0.8377628842153917,
+    "ratio_true_over_net": 0.9659616164668918,
+    "f0": 0.8672838236363876
+   },
+   {
+    "capture": "42898811_photos",
+    "f_norm": 0.8377628842153917,
+    "ratio_true_over_net": 1.1051693809492547,
+    "f0": 0.7580402593997116
+   },
+   {
+    "capture": "42898811_video",
+    "f_norm": 0.8290963716200601,
+    "ratio_true_over_net": 1.173639032885476,
+    "f0": 0.7064321724045485
+   },
+   {
+    "capture": "42445022_photos",
+    "f_norm": 0.8377628842153917,
+    "ratio_true_over_net": 0.8840572825760172,
+    "f0": 0.9476341643544519
+   }
+  ],
+  "note": "fitted by dataprep/fit_depth_scale.py on DEV photo/video captures only"
+ }
+}

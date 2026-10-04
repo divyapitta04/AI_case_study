@@ -1,0 +1,93 @@
+{
+ "_note": "Pre-registered benchmark sample, fixed BEFORE any of these rooms were run through the pipeline. Population: ARKitScenes Validation-fold visits with FARO laser scans and >= 3 iPad sessions (115 visits, excluding 421337). Order: random.Random(2026).shuffle(sorted(visit_ids)); the first 3 are DEV rooms (allowed for tuning and interval calibration, together with 421337 which was used for the first fix loop), the next 5 are TEST rooms (never used for any design decision; evaluated once at the end). Exclusion rule (fixed before any test result): a room whose sessions register to its laser scans with < 50 % inliers has no usable ground truth and is replaced by the next visit in the order.",
+ "dev": {
+  "421337": {
+   "sessions": [
+    "42444946",
+    "42444949",
+    "42444950"
+   ],
+   "sky": "Left"
+  },
+  "467293": {
+   "sessions": [
+    "45261615",
+    "45261619",
+    "45261620"
+   ],
+   "sky": "Left"
+  },
+  "434650": {
+   "sessions": [
+    "42898811",
+    "42898816",
+    "42898817"
+   ],
+   "sky": "Down"
+  },
+  "421380": {
+   "sessions": [
+    "42445021",
+    "42445022",
+    "42445026"
+   ],
+   "sky": "Left"
+  }
+ },
+ "test": {
+  "483311": {
+   "sessions": [
+    "48018382",
+    "48018386",
+    "48018387"
+   ],
+   "sky": "Left"
+  },
+  "469249": {
+   "sessions": [
+    "47332915",
+    "47332916",
+    "47332918"
+   ],
+   "sky": "Down"
+  },
+  "469782": {
+   "sessions": [
+    "47334107",
+    "47334109",
+    "47334110"
+   ],
+   "sky": "Left"
+  },
+  "422851": {
+   "sessions": [
+    "42897501",
+    "42897504",
+    "42897508"
+   ],
+   "sky": "Up"
+  },
+  "471952": {
+   "sessions": [
+    "47204552",
+    "47204554",
+    "47204556"
+   ],
+   "sky": "Down",
+   "note": "replacement for 471948 (next in the shuffled order)"
+  }
+ },
+ "excluded": {
+  "471948": {
+   "sessions": [
+    "47204559",
+    "47204563",
+    "47204566"
+   ],
+   "reason": "laser stations do not cover the captured room: registration of all three sessions to the laser 23-32 % (rule: < 50 % -> excluded, replaced by the next visit in the pre-registered order)"
+  }
+ },
+ "excluded_sessions": {
+  "42445021": "captured a different space of the venue: its floor-to-ceiling (3.12 m, raw depth) is 0.81 m higher than the laser room's 2.32 m, impossible inside that room; laser registration 48 % (rule: session height > laser height + 0.2 m -> excluded)"
+ }
+}

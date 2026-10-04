@@ -1,0 +1,14 @@
+{
+ "format": "floorscan-lidar-v1",
+ "tier": "lidar",
+ "device": {
+  "model": "iPad Pro (ARKitScenes, real)"
+ },
+ "source": "ARKitScenes video 42445026",
+ "frames": 217,
+ "world_up_in_dataset": [
+  0.0,
+  0.0,
+  1.0
+ ]
+}

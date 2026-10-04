@@ -1,0 +1,53 @@
+{
+ "schema_version": "floorscan-1.0",
+ "capture": {
+  "tier": "lidar",
+  "source": "floorscan-lidar-v1",
+  "device": null,
+  "frames": 172
+ },
+ "units": "m",
+ "rooms": [],
+ "plan": {
+  "rooms": [],
+  "adjacency": [],
+  "footprint_area": {
+   "value": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "sigma": 0.0
+  },
+  "wall_thickness": 0.12,
+  "overlaps": [],
+  "drift": {
+   "method": "plane-anchored per-room pose refinement + door-anchored room pose graph (loop closure)",
+   "local_planar": true,
+   "door_graph": true,
+   "links": 0,
+   "loops": 1,
+   "door_residual_rms_before": 0.0,
+   "door_residual_rms_after": 0.0,
+   "wall_thickness_source": "default"
+  }
+ },
+ "quality": {
+  "warnings": [
+   "floor/ceiling level not observed; assumed from camera height",
+   "NO ROOM RECONSTRUCTED: no closed free-space region was found (capture too short, held too low, or floor and ceiling never seen) - recapture following capture/PROTOCOL.md",
+   "schema validation: 1 issue(s), first: rooms: [] should be non-empty"
+  ],
+  "hazards": []
+ },
+ "timing": {
+  "openings": 0.0,
+  "stitch": 0.0,
+  "levels_yaw": 0.217,
+  "segment": 3.61,
+  "regions": 0.0,
+  "room_fit": 0.0,
+  "damage": 0.0,
+  "total": 6.025
+ }
+}

@@ -1,0 +1,310 @@
+{
+ "schema_version": "floorscan-1.0",
+ "capture": {
+  "tier": "photos",
+  "source": "photos/da_v2",
+  "device": "iPhone 15+ (stills)",
+  "photos": 8
+ },
+ "units": "m",
+ "rooms": [
+  {
+   "id": "room",
+   "name": "room",
+   "polygon": [
+    [
+     3.8,
+     0.0
+    ],
+    [
+     3.8,
+     3.4
+    ],
+    [
+     0.0,
+     3.4
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "walls": [
+    {
+     "id": "room.w0",
+     "p0": [
+      0.0,
+      0.0
+     ],
+     "p1": [
+      3.8,
+      0.0
+     ],
+     "length": {
+      "value": 3.8,
+      "ci95": [
+       1.7676,
+       5.8324
+      ],
+      "sigma": 1.03692
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w1",
+     "p0": [
+      3.8,
+      0.0
+     ],
+     "p1": [
+      3.8,
+      3.4
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       1.4168,
+       5.3832
+      ],
+      "sigma": 1.01186
+     },
+     "observed": true
+    },
+    {
+     "id": "room.w2",
+     "p0": [
+      3.8,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      3.4
+     ],
+     "length": {
+      "value": 3.8,
+      "ci95": [
+       1.7676,
+       5.8324
+      ],
+      "sigma": 1.03692
+     },
+     "observed": true
+    },
+    {
+     "id": "room.w3",
+     "p0": [
+      0.0,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      0.0
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       1.4168,
+       5.3832
+      ],
+      "sigma": 1.01186
+     },
+     "observed": false
+    }
+   ],
+   "ceiling_height": {
+    "value": 4.0318,
+    "ci95": [
+     2.9019,
+     5.1617
+    ],
+    "sigma": 0.57647
+   },
+   "floor_area": {
+    "value": 12.92,
+    "ci95": [
+     3.6996,
+     22.1404
+    ],
+    "sigma": 4.70426
+   },
+   "openings": [
+    {
+     "id": "room.o0",
+     "wall_id": "room.w1",
+     "type": "passage",
+     "center_offset": {
+      "value": 2.6132,
+      "ci95": [
+       1.9113,
+       3.3151
+      ],
+      "sigma": 0.35813
+     },
+     "width": {
+      "value": 1.3788,
+      "ci95": [
+       0.9931,
+       1.7644
+      ],
+      "sigma": 0.19675
+     },
+     "height": {
+      "value": 3.3611,
+      "ci95": [
+       2.4467,
+       4.2755
+      ],
+      "sigma": 0.46652
+     },
+     "sill": {
+      "value": 0.0,
+      "ci95": [
+       -0.1208,
+       0.1208
+      ],
+      "sigma": 0.06165
+     },
+     "confidence": 1.0,
+     "quality": {
+      "incidence_cos": 0.795,
+      "wall_hits_inside": 0.068
+     },
+     "links_to": null
+    }
+   ],
+   "surfaces": [
+    {
+     "id": "room.floor",
+     "kind": "floor",
+     "area": {
+      "value": 12.92,
+      "ci95": [
+       3.6996,
+       22.1404
+      ],
+      "sigma": 4.70426
+     }
+    },
+    {
+     "id": "room.ceiling",
+     "kind": "ceiling",
+     "area": {
+      "value": 12.92,
+      "ci95": [
+       3.6996,
+       22.1404
+      ],
+      "sigma": 4.70426
+     }
+    },
+    {
+     "id": "room.w0",
+     "kind": "wall",
+     "area": {
+      "value": 15.3208,
+      "ci95": [
+       6.7931,
+       23.8485
+      ],
+      "sigma": 4.35086
+     }
+    },
+    {
+     "id": "room.w1",
+     "kind": "wall",
+     "area": {
+      "value": 13.7081,
+      "ci95": [
+       5.4394,
+       21.9768
+      ],
+      "sigma": 4.21872
+     }
+    },
+    {
+     "id": "room.w2",
+     "kind": "wall",
+     "area": {
+      "value": 15.3208,
+      "ci95": [
+       6.7931,
+       23.8485
+      ],
+      "sigma": 4.35086
+     }
+    },
+    {
+     "id": "room.w3",
+     "kind": "wall",
+     "area": {
+      "value": 13.7081,
+      "ci95": [
+       5.4394,
+       21.9768
+      ],
+      "sigma": 4.21872
+     }
+    }
+   ],
+   "damage": [],
+   "concealed_damage": [],
+   "scope": [],
+   "notes": [
+    "east/west walls not both observed: room width is a prior",
+    "north/south walls not both observed: room depth is a prior"
+   ]
+  }
+ ],
+ "plan": {
+  "rooms": [
+   {
+    "room_id": "room",
+    "rotation_deg": 0.0,
+    "translation": [
+     0.8098,
+     0.4574
+    ]
+   }
+  ],
+  "adjacency": [],
+  "footprint_area": {
+   "value": 13.7984,
+   "ci95": [
+    5.1465,
+    22.4503
+   ],
+   "sigma": 4.41425
+  },
+  "wall_thickness": 0.12,
+  "overlaps": [],
+  "drift": {
+   "method": "door-anchored room placement from doorway shots (photo tier has no shared frame)",
+   "local_planar": false,
+   "door_graph": true,
+   "links": 0,
+   "loops": 0,
+   "door_residual_rms_before": 0.0,
+   "door_residual_rms_after": 0.0,
+   "wall_thickness_source": "default"
+  }
+ },
+ "quality": {
+  "warnings": [
+   "room: east/west walls not both observed: room width is a prior",
+   "room: north/south walls not both observed: room depth is a prior"
+  ],
+  "hazards": [],
+  "scale": {
+   "room": {
+    "source": "depth network",
+    "scale_net_over_final": 1.0
+   }
+  }
+ },
+ "timing": {
+  "rooms": 11.256,
+  "stitch": 0.0,
+  "damage": 0.095,
+  "total": 11.381
+ }
+}

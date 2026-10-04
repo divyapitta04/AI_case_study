@@ -1,0 +1,413 @@
+{
+ "schema_version": "floorscan-1.0",
+ "capture": {
+  "tier": "photos",
+  "source": "photos/da_v2",
+  "device": "iPhone 15+ (stills)",
+  "photos": 8
+ },
+ "units": "m",
+ "rooms": [
+  {
+   "id": "room",
+   "name": "room",
+   "polygon": [
+    [
+     3.8,
+     0.0
+    ],
+    [
+     3.8,
+     3.4
+    ],
+    [
+     0.0,
+     3.4
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "walls": [
+    {
+     "id": "room.w0",
+     "p0": [
+      0.0,
+      0.0
+     ],
+     "p1": [
+      3.8,
+      0.0
+     ],
+     "length": {
+      "value": 3.8,
+      "ci95": [
+       -4.2622,
+       11.8622
+      ],
+      "sigma": 4.11334
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w1",
+     "p0": [
+      3.8,
+      0.0
+     ],
+     "p1": [
+      3.8,
+      3.4
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       -4.5513,
+       11.3513
+      ],
+      "sigma": 4.05678
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w2",
+     "p0": [
+      3.8,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      3.4
+     ],
+     "length": {
+      "value": 3.8,
+      "ci95": [
+       -4.2622,
+       11.8622
+      ],
+      "sigma": 4.11334
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w3",
+     "p0": [
+      0.0,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      0.0
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       -4.5513,
+       11.3513
+      ],
+      "sigma": 4.05678
+     },
+     "observed": false
+    }
+   ],
+   "ceiling_height": {
+    "value": 2.2429,
+    "ci95": [
+     1.29,
+     3.1958
+    ],
+    "sigma": 0.48617
+   },
+   "floor_area": {
+    "value": 12.92,
+    "ci95": [
+     -0.1091,
+     25.9491
+    ],
+    "sigma": 6.6475
+   },
+   "openings": [],
+   "surfaces": [
+    {
+     "id": "room.floor",
+     "kind": "floor",
+     "area": {
+      "value": 12.92,
+      "ci95": [
+       -0.1091,
+       25.9491
+      ],
+      "sigma": 6.6475
+     }
+    },
+    {
+     "id": "room.ceiling",
+     "kind": "ceiling",
+     "area": {
+      "value": 12.92,
+      "ci95": [
+       -0.1091,
+       25.9491
+      ],
+      "sigma": 6.6475
+     }
+    },
+    {
+     "id": "room.w0",
+     "kind": "wall",
+     "area": {
+      "value": 8.5231,
+      "ci95": [
+       1.8975,
+       15.1487
+      ],
+      "sigma": 3.38041
+     }
+    },
+    {
+     "id": "room.w1",
+     "kind": "wall",
+     "area": {
+      "value": 7.626,
+      "ci95": [
+       1.1431,
+       14.1088
+      ],
+      "sigma": 3.30759
+     }
+    },
+    {
+     "id": "room.w2",
+     "kind": "wall",
+     "area": {
+      "value": 8.5231,
+      "ci95": [
+       1.8975,
+       15.1487
+      ],
+      "sigma": 3.38041
+     }
+    },
+    {
+     "id": "room.w3",
+     "kind": "wall",
+     "area": {
+      "value": 7.626,
+      "ci95": [
+       1.1431,
+       14.1088
+      ],
+      "sigma": 3.30759
+     }
+    }
+   ],
+   "damage": [
+    {
+     "id": "room.dmg0",
+     "surface_id": "room.floor",
+     "class": "crack",
+     "confidence": 0.353,
+     "extent": {
+      "width": {
+       "value": 0.1,
+       "ci95": [
+        -0.0094,
+        0.2094
+       ],
+       "sigma": 0.05583
+      },
+      "height": {
+       "value": 0.24,
+       "ci95": [
+        0.1137,
+        0.3663
+       ],
+       "sigma": 0.06443
+      },
+      "area": {
+       "value": 0.0204,
+       "ci95": [
+        -0.0791,
+        0.1199
+       ],
+       "sigma": 0.05077
+      }
+     },
+     "polygon_uv": [
+      [
+       2.39,
+       2.79
+      ],
+      [
+       2.33,
+       2.81
+      ],
+      [
+       2.33,
+       3.01
+      ],
+      [
+       2.41,
+       2.97
+      ]
+     ],
+     "location": {
+      "plan_xy": [
+       2.365,
+       2.895
+      ],
+      "z": 0.0
+     }
+    },
+    {
+     "id": "room.dmg1",
+     "surface_id": "room.floor",
+     "class": "water_stain",
+     "confidence": 0.281,
+     "extent": {
+      "width": {
+       "value": 0.3,
+       "ci95": [
+        0.1634,
+        0.4366
+       ],
+       "sigma": 0.06968
+      },
+      "height": {
+       "value": 0.6,
+       "ci95": [
+        0.397,
+        0.803
+       ],
+       "sigma": 0.10355
+      },
+      "area": {
+       "value": 0.126,
+       "ci95": [
+        0.0116,
+        0.2404
+       ],
+       "sigma": 0.05836
+      }
+     },
+     "polygon_uv": [
+      [
+       1.83,
+       2.81
+      ],
+      [
+       1.75,
+       2.81
+      ],
+      [
+       1.63,
+       3.39
+      ],
+      [
+       1.85,
+       3.39
+      ],
+      [
+       1.85,
+       3.33
+      ],
+      [
+       1.91,
+       3.29
+      ],
+      [
+       1.91,
+       3.07
+      ]
+     ],
+     "location": {
+      "plan_xy": [
+       1.819,
+       3.156
+      ],
+      "z": 0.0
+     }
+    }
+   ],
+   "concealed_damage": [],
+   "scope": [
+    {
+     "id": "room.sc0",
+     "surface_id": "room.floor",
+     "code": "CRACK-FILL",
+     "description": "Crack repair (tape, fill, sand)",
+     "unit": "m",
+     "quantity": {
+      "value": 0.44,
+      "ci95": [
+       0.2519,
+       0.6281
+      ],
+      "sigma": 0.09595
+     },
+     "basis": "crack room.dmg0",
+     "evidence": [
+      "room.dmg0"
+     ]
+    }
+   ],
+   "notes": [
+    "east/west walls not both observed: room width is a prior",
+    "north/south walls not both observed: room depth is a prior"
+   ]
+  }
+ ],
+ "plan": {
+  "rooms": [
+   {
+    "room_id": "room",
+    "rotation_deg": 0.0,
+    "translation": [
+     1.9,
+     1.7
+    ]
+   }
+  ],
+  "adjacency": [],
+  "footprint_area": {
+   "value": 13.7984,
+   "ci95": [
+    1.2064,
+    26.3904
+   ],
+   "sigma": 6.42447
+  },
+  "wall_thickness": 0.12,
+  "overlaps": [],
+  "drift": {
+   "method": "door-anchored room placement from doorway shots (photo tier has no shared frame)",
+   "local_planar": false,
+   "door_graph": true,
+   "links": 0,
+   "loops": 0,
+   "door_residual_rms_before": 0.0,
+   "door_residual_rms_after": 0.0,
+   "wall_thickness_source": "default"
+  }
+ },
+ "quality": {
+  "warnings": [
+   "room: east/west walls not both observed: room width is a prior",
+   "room: north/south walls not both observed: room depth is a prior"
+  ],
+  "hazards": [],
+  "scale": {
+   "room": {
+    "source": "depth network",
+    "scale_net_over_final": 1.0
+   }
+  }
+ },
+ "timing": {
+  "rooms": 15.64,
+  "stitch": 0.0,
+  "damage": 0.405,
+  "total": 16.091
+ }
+}

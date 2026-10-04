@@ -1,0 +1,15 @@
+# CPU wheels for torch (the depth network runs on CPU); everything else from PyPI
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy>=2.0
+scipy>=1.13
+opencv-python-headless>=4.9
+matplotlib>=3.8
+pillow>=10
+shapely>=2.0
+jsonschema>=4.20
+pycolmap>=3.10        # structure-from-motion for the video tier (COLMAP, BSD-3)
+torch>=2.2            # Depth-Anything-V2 metric depth for the photo and video tiers (CPU)
+transformers>=4.45
+reportlab>=4.0        # scale card + report PDF
+pypdf>=4.0            # report page-count check
+pytest>=8

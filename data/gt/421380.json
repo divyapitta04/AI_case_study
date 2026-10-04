@@ -1,0 +1,65 @@
+{
+ "world": "arkitscenes",
+ "visit": "421380",
+ "laser_stations": [
+  "170107",
+  "170108",
+  "170177"
+ ],
+ "wall_thickness": 0.12,
+ "adjacency": [],
+ "rooms": [
+  {
+   "name": "room",
+   "x0": 0.0,
+   "y0": 0.0,
+   "w": 2.8145148615299966,
+   "d": 3.0057947607584588,
+   "ceiling_height": 2.3155627835157873,
+   "floor_area": 8.459854024863683,
+   "walls": {
+    "S": 2.8145148615299966,
+    "N": 2.8145148615299966,
+    "E": 3.0057947607584588,
+    "W": 3.0057947607584588
+   },
+   "openings": [
+    {
+     "id": "room.S.0",
+     "wall": "S",
+     "center": 1.0299,
+     "width": 1.1592,
+     "height": 1.3106,
+     "sill": 0.7879,
+     "kind": "window",
+     "link": null
+    }
+   ],
+   "damage": [],
+   "hazards": {
+    "low_light": false,
+    "glossy_floor": false,
+    "mirrors": 0
+   },
+   "ignore_openings": [
+    {
+     "wall": "E",
+     "u0": 1.88,
+     "u1": 3.01,
+     "note": "diagonal corner region"
+    },
+    {
+     "wall": "N",
+     "u0": 1.6,
+     "u1": 2.82,
+     "note": "diagonal corner region"
+    }
+   ]
+  }
+ ],
+ "method": "dataprep/room_gt.py: laser stations inside the captured room, sharpest-histogram yaw, floor/ceiling = strongest horizontal planes, each main wall = strongest range^2-weighted plane in a manually chosen window (W:-1.60:-1.50,E:1.21:1.31,S:-0.50:-0.40,N:2.47:2.57)",
+ "openings_reliable": true,
+ "note": "Non-rectangular: clipped (diagonal) north-east corner; closet recess on the south side. Each main face covers about 60 % of its side.",
+ "openings_method": "dataprep/openings_gt.py: openings marked roughly on laser elevation images by a person, edges snapped to the laser wall (50 % solid-share crossing, 1 cm columns)",
+ "coverage": "captured_room"
+}

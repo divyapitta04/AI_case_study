@@ -1,0 +1,38 @@
+{
+ "421337": {
+  "windows": "W:-2.50:-2.38,E:1.22:1.32,S:-3.70:-3.60,N:0.50:0.60",
+  "note": "Bay window on the east side (recess x 1.40-1.75 excluded, main face = the wall stubs at x 1.27); chimney breast on the north side (face y 0.55; alcoves behind it at 0.78-0.86 excluded)."
+ },
+ "467293": {
+  "windows": "W:-0.80:-0.68,E:3.79:3.89,S:-0.84:-0.74,N:2.44:2.54",
+  "note": "Rectangular room. South side: a 1.2 m box projects 21 cm (26 % of the side) - below the 40 % rule, so the main face y -0.79 is used."
+ },
+ "434650": {
+  "windows": "W:-0.58:-0.48,E:3.64:3.74,S:-0.84:-0.74,N:0.94:1.04",
+  "note": "Narrow furnished room; built-in wardrobe on the north-west and furniture along the south are not walls."
+ },
+ "421380": {
+  "windows": "W:-1.60:-1.50,E:1.21:1.31,S:-0.50:-0.40,N:2.47:2.57",
+  "note": "Non-rectangular: clipped (diagonal) north-east corner; closet recess on the south side. Each main face covers about 60 % of its side."
+ },
+ "483311": {
+  "windows": "W:-0.86:-0.78,E:0.61:0.69,S:-0.91:-0.83,N:1.01:1.09",
+  "note": "Small room; door recess on the east side."
+ },
+ "469249": {
+  "windows": "W:-0.92:-0.84,E:2.35:2.43,S:-3.05:-2.97,N:0.73:0.81",
+  "note": "Opening to an adjacent space on the east side (main face 53 % of the side); cabinets in front of the north wall are furniture."
+ },
+ "469782": {
+  "windows": "W:-2.01:-1.93,E:0.88:0.96,S:-0.71:-0.63,N:0.91:0.99",
+  "note": "North wall steps (face 0.95 covers 68 %, 0.68 covers 32 % -> 0.95); closet front at x 0.69 in front of the east wall (furniture -> wall 0.92)."
+ },
+ "422851": {
+  "windows": "W:-1.30:-1.22,E:0.85:0.93,S:-2.61:-2.53,N:1.37:1.45",
+  "note": "Irregular space (partitions, storage recess): rule applied mechanically - innermost face covering >= 40 % of each side."
+ },
+ "471952": {
+  "windows": "W:-0.47:-0.39,E:3.12:3.22,S:-3.03:-2.95,N:4.72:4.80",
+  "note": "Long rectangular room; shelves along the west side are furniture."
+ }
+}

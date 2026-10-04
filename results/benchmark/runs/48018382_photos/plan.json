@@ -1,0 +1,268 @@
+{
+ "schema_version": "floorscan-1.0",
+ "capture": {
+  "tier": "photos",
+  "source": "photos/da_v2",
+  "device": "iPhone 15+ (stills)",
+  "photos": 8
+ },
+ "units": "m",
+ "rooms": [
+  {
+   "id": "room",
+   "name": "room",
+   "polygon": [
+    [
+     0.6503,
+     0.0
+    ],
+    [
+     0.6503,
+     3.4
+    ],
+    [
+     0.0,
+     3.4
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "walls": [
+    {
+     "id": "room.w0",
+     "p0": [
+      0.0,
+      0.0
+     ],
+     "p1": [
+      0.6503,
+      0.0
+     ],
+     "length": {
+      "value": 0.6503,
+      "ci95": [
+       -6.8568,
+       8.1575
+      ],
+      "sigma": 3.83019
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w1",
+     "p0": [
+      0.6503,
+      0.0
+     ],
+     "p1": [
+      0.6503,
+      3.4
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       -2.5497,
+       9.3497
+      ],
+      "sigma": 3.03557
+     },
+     "observed": false
+    },
+    {
+     "id": "room.w2",
+     "p0": [
+      0.6503,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      3.4
+     ],
+     "length": {
+      "value": 0.6503,
+      "ci95": [
+       -6.8568,
+       8.1575
+      ],
+      "sigma": 3.83019
+     },
+     "observed": true
+    },
+    {
+     "id": "room.w3",
+     "p0": [
+      0.0,
+      3.4
+     ],
+     "p1": [
+      0.0,
+      0.0
+     ],
+     "length": {
+      "value": 3.4,
+      "ci95": [
+       -2.5497,
+       9.3497
+      ],
+      "sigma": 3.03557
+     },
+     "observed": false
+    }
+   ],
+   "ceiling_height": {
+    "value": 1.6464,
+    "ci95": [
+     1.0282,
+     2.2646
+    ],
+    "sigma": 0.31541
+   },
+   "floor_area": {
+    "value": 2.2111,
+    "ci95": [
+     -4.3843,
+     8.8065
+    ],
+    "sigma": 3.365
+   },
+   "openings": [],
+   "surfaces": [
+    {
+     "id": "room.floor",
+     "kind": "floor",
+     "area": {
+      "value": 2.2111,
+      "ci95": [
+       -4.3843,
+       8.8065
+      ],
+      "sigma": 3.365
+     }
+    },
+    {
+     "id": "room.ceiling",
+     "kind": "ceiling",
+     "area": {
+      "value": 2.2111,
+      "ci95": [
+       -4.3843,
+       8.8065
+      ],
+      "sigma": 3.365
+     }
+    },
+    {
+     "id": "room.w0",
+     "kind": "wall",
+     "area": {
+      "value": 1.0707,
+      "ci95": [
+       -3.2554,
+       5.3968
+      ],
+      "sigma": 2.2072
+     }
+    },
+    {
+     "id": "room.w1",
+     "kind": "wall",
+     "area": {
+      "value": 5.5977,
+      "ci95": [
+       2.0533,
+       9.1421
+      ],
+      "sigma": 1.80835
+     }
+    },
+    {
+     "id": "room.w2",
+     "kind": "wall",
+     "area": {
+      "value": 1.0707,
+      "ci95": [
+       -3.2554,
+       5.3968
+      ],
+      "sigma": 2.2072
+     }
+    },
+    {
+     "id": "room.w3",
+     "kind": "wall",
+     "area": {
+      "value": 5.5977,
+      "ci95": [
+       2.0533,
+       9.1421
+      ],
+      "sigma": 1.80835
+     }
+    }
+   ],
+   "damage": [],
+   "concealed_damage": [],
+   "scope": [],
+   "notes": [
+    "narrow room (corridor): end walls taken as the outermost well-supported planes",
+    "east/west walls not both observed: room width is a prior",
+    "north/south walls not both observed: room depth is a prior"
+   ]
+  }
+ ],
+ "plan": {
+  "rooms": [
+   {
+    "room_id": "room",
+    "rotation_deg": 0.0,
+    "translation": [
+     0.3462,
+     2.0058
+    ]
+   }
+  ],
+  "adjacency": [],
+  "footprint_area": {
+   "value": 2.7116,
+   "ci95": [
+    -3.8666,
+    9.2897
+   ],
+   "sigma": 3.3562
+  },
+  "wall_thickness": 0.12,
+  "overlaps": [],
+  "drift": {
+   "method": "door-anchored room placement from doorway shots (photo tier has no shared frame)",
+   "local_planar": false,
+   "door_graph": true,
+   "links": 0,
+   "loops": 0,
+   "door_residual_rms_before": 0.0,
+   "door_residual_rms_after": 0.0,
+   "wall_thickness_source": "default"
+  }
+ },
+ "quality": {
+  "warnings": [
+   "room: narrow room (corridor): end walls taken as the outermost well-supported planes",
+   "room: east/west walls not both observed: room width is a prior",
+   "room: north/south walls not both observed: room depth is a prior"
+  ],
+  "hazards": [],
+  "scale": {
+   "room": {
+    "source": "depth network",
+    "scale_net_over_final": 1.0
+   }
+  }
+ },
+ "timing": {
+  "rooms": 11.981,
+  "stitch": 0.0,
+  "damage": 0.233,
+  "total": 12.261
+ }
+}

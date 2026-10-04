@@ -1,0 +1,69 @@
+{
+ "world": "arkitscenes",
+ "visit": "467293",
+ "laser_stations": [
+  "177806",
+  "177810",
+  "177812"
+ ],
+ "wall_thickness": 0.12,
+ "adjacency": [],
+ "rooms": [
+  {
+   "name": "room",
+   "x0": 0.0,
+   "y0": 0.0,
+   "w": 4.573532848066151,
+   "d": 3.2842694959874317,
+   "ceiling_height": 2.3745879041244535,
+   "floor_area": 15.02071442180018,
+   "walls": {
+    "S": 4.573532848066151,
+    "N": 4.573532848066151,
+    "E": 3.2842694959874317,
+    "W": 3.2842694959874317
+   },
+   "openings": [
+    {
+     "id": "room.N.0",
+     "wall": "N",
+     "center": 1.899,
+     "width": 0.858,
+     "height": 1.9988,
+     "sill": 0.0,
+     "kind": "door",
+     "link": null
+    },
+    {
+     "id": "room.W.1",
+     "wall": "W",
+     "center": 1.6481,
+     "width": 1.7437,
+     "height": 1.291,
+     "sill": 0.7883,
+     "kind": "window",
+     "link": null
+    }
+   ],
+   "damage": [],
+   "hazards": {
+    "low_light": false,
+    "glossy_floor": false,
+    "mirrors": 0
+   },
+   "ignore_openings": [
+    {
+     "wall": "S",
+     "u0": 2.9,
+     "u1": 3.5,
+     "note": "possible closed flush door (dark full-height panel), no laser evidence"
+    }
+   ]
+  }
+ ],
+ "method": "dataprep/room_gt.py: laser stations inside the captured room, sharpest-histogram yaw, floor/ceiling = strongest horizontal planes, each main wall = strongest range^2-weighted plane in a manually chosen window (W:-0.80:-0.68,E:3.79:3.89,S:-0.84:-0.74,N:2.44:2.54)",
+ "openings_reliable": true,
+ "note": "Rectangular room. South side: a 1.2 m box projects 21 cm (26 % of the side) - below the 40 % rule, so the main face y -0.79 is used.",
+ "openings_method": "dataprep/openings_gt.py: openings marked roughly on laser elevation images by a person, edges snapped to the laser wall (50 % solid-share crossing, 1 cm columns)",
+ "coverage": "captured_room"
+}

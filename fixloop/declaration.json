@@ -1,0 +1,11 @@
+{
+ "gate": "LiDAR wall lengths within max(2 cm, 0.5 %) of the laser ground truth (real ARKitScenes captures 42444946 + 42444949)",
+ "metric": "walls_max_abs_err",
+ "unit": "m",
+ "captures": ["42444946_lidar", "42444949_lidar"],
+ "before_measured": 0.224,
+ "predicted_after": 0.070,
+ "predicted_walls_ok": "0-2 of 8",
+ "required": 0.020,
+ "story": "Fix loop on REAL data (ARKitScenes room 421337, FARO laser ground truth). Worst gate: LiDAR wall lengths - 0 of 8 walls within max(2 cm, 0.5 %), worst error {before}. Diagnosis (fixloop/diagnose.py, our wall-band points registered onto the laser scan) showed that 6 of 8 wall planes sit within 2.1 cm of the laser's main planes; the error comes from two planes placed in recesses - the bay window (+10.6 cm, capture 46) and the chimney alcove (+24.1 cm, capture 49) - because the wall plane was the highest histogram peak and the recess back collected more points than the main wall. Fix: among full-height candidate planes that cover >= 60 % of the wall length with >= 25 % of the top support, take the innermost. Predicted worst error 70 mm (the bay-window plane of capture 49 has no main-plane candidate); measured after: {after}."
+}

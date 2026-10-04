@@ -1,0 +1,12 @@
+{
+ "format": "floorscan-video-v1",
+ "tier": "video",
+ "device": {
+  "model": "iPad Pro (ARKitScenes, real)"
+ },
+ "fps": 10.004083118362955,
+ "video": "walkthrough.mp4",
+ "frames": 941,
+ "lens_f35_hint": 29.03,
+ "note": "upright-rotated from the dataset .mov; no scale card in this real capture"
+}

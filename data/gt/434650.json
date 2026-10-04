@@ -1,0 +1,58 @@
+{
+ "world": "arkitscenes",
+ "visit": "434650",
+ "laser_stations": [
+  "181712",
+  "181715"
+ ],
+ "wall_thickness": 0.12,
+ "adjacency": [],
+ "rooms": [
+  {
+   "name": "room",
+   "x0": 0.0,
+   "y0": 0.0,
+   "w": 4.232069106825091,
+   "d": 1.785351045914834,
+   "ceiling_height": 2.7041284413066364,
+   "floor_area": 7.555729006254034,
+   "walls": {
+    "S": 4.232069106825091,
+    "N": 4.232069106825091,
+    "E": 1.785351045914834,
+    "W": 1.785351045914834
+   },
+   "openings": [
+    {
+     "id": "room.W.0",
+     "wall": "W",
+     "center": 0.3953,
+     "width": 0.7507,
+     "height": 2.0032,
+     "sill": 0.0,
+     "kind": "door",
+     "link": null
+    }
+   ],
+   "damage": [],
+   "hazards": {
+    "low_light": false,
+    "glossy_floor": false,
+    "mirrors": 0
+   },
+   "ignore_openings": [
+    {
+     "wall": "E",
+     "u0": 0.85,
+     "u1": 1.7,
+     "note": "closed door flush with the wall (no laser evidence of an opening)"
+    }
+   ]
+  }
+ ],
+ "method": "dataprep/room_gt.py: laser stations inside the captured room, sharpest-histogram yaw, floor/ceiling = strongest horizontal planes, each main wall = strongest range^2-weighted plane in a manually chosen window (W:-0.58:-0.48,E:3.64:3.74,S:-0.84:-0.74,N:0.94:1.04)",
+ "openings_reliable": true,
+ "note": "Narrow furnished room; built-in wardrobe on the north-west and furniture along the south are not walls.",
+ "openings_method": "dataprep/openings_gt.py: openings marked roughly on laser elevation images by a person, edges snapped to the laser wall (50 % solid-share crossing, 1 cm columns)",
+ "coverage": "captured_room"
+}
